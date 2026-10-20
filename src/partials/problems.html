@@ -1,5 +1,8 @@
-<div class="rws-problems bg-[url(../img/problems-bg.webp)] bg-cover bg-center bg-no-repeat py-12 sm:py-16 md:py-20 lg:py-[120px] px-4 sm:px-6 xl:px-0">
-    <div class="max-w-[970px] mx-auto flex flex-col items-center lg:items-start lg:flex-row gap-8 sm:gap-10 lg:gap-[30px]">
+<div class="relative rws-problems bg-[url(../img/problems-bg.webp)] bg-cover bg-center bg-no-repeat py-12 sm:py-16 md:py-20 lg:py-[120px] px-4 sm:px-6 xl:px-0 overflow-hidden">
+    <!-- Полупрозрачное затемнение на адаптиве (< lg) для отличной читаемости текста -->
+    <div class="absolute inset-0 bg-[#101F26]/60 sm:bg-[#101F26]/50 lg:hidden pointer-events-none z-0"></div>
+
+    <div class="max-w-[970px] mx-auto flex flex-col items-center lg:items-start lg:flex-row gap-8 sm:gap-10 lg:gap-[30px] relative z-10">
         <div class="contents lg:flex lg:flex-col lg:items-start lg:w-auto lg:max-w-[470px] lg:space-y-[110px] lg:shrink-0 lg:translate-y-64">
             <div class="rws-problems-vector hidden lg:block lg:translate-x-5 pointer-events-none">
                 <svg class="rws-problems-svg overflow-visible" width="367" height="118" viewBox="0 0 367 118" fill="none" xmlns="http://www.w3.org/2000/svg">
