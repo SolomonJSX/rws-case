@@ -979,39 +979,38 @@ function initReviewAnimation() {
   const gsap = window.gsap
   const header = reviewSection.querySelector('.rws-review-header')
   const author = reviewSection.querySelector('.rws-review-author')
-  const reviewLeft = reviewSection.querySelector('.rws-review-left')
-  const reviewRight = reviewSection.querySelector('.rws-review-right')
+  const reviewBody = reviewSection.querySelector('.rws-review-body')
+  const reviewQuote = reviewSection.querySelector('.rws-review-quote')
 
-  if (!reviewLeft || !reviewRight) return
+  if (!reviewBody || !reviewQuote) return
 
   const mm = gsap.matchMedia()
 
   // Animate starting from lg (min-width: 1024px)
   mm.add('(min-width: 1024px)', () => {
-    // Initial hidden states:
-    // Left side (quote & paragraphs) shifted to the left
-    gsap.set(reviewLeft, {
+    // 1-й блок (основной отзыв) начинает СПРАВА (+110px) и плавно едет влево
+    gsap.set(reviewBody, {
       opacity: 0,
-      x: -90
+      x: 110
     })
 
-    // Right side (highlight callout & right quote) shifted to the right
-    gsap.set(reviewRight, {
+    // 2-й блок (благодарность) начинает СЛЕВА (-110px) и плавно едет вправо
+    gsap.set(reviewQuote, {
       opacity: 0,
-      x: 90
+      x: -110
     })
 
     if (header) {
       gsap.set(header, {
         opacity: 0,
-        y: 25
+        y: 20
       })
     }
 
     if (author) {
       gsap.set(author, {
         opacity: 0,
-        x: -35
+        x: -25
       })
     }
 
@@ -1023,12 +1022,12 @@ function initReviewAnimation() {
       }
     })
 
-    // 1. Header & author smoothly fade/slide in
+    // Заголовок и автор мягко проявляются
     if (header) {
       tl.to(header, {
         opacity: 1,
         y: 0,
-        duration: 0.7,
+        duration: 0.8,
         ease: 'power2.out',
         clearProps: 'transform,opacity'
       })
@@ -1040,48 +1039,48 @@ function initReviewAnimation() {
         {
           opacity: 1,
           x: 0,
-          duration: 0.7,
+          duration: 0.8,
           ease: 'power2.out',
           clearProps: 'transform,opacity'
         },
-        header ? '-=0.4' : 0
+        header ? '-=0.5' : 0
       )
     }
 
-    // 2. Main review text appears from the LEFT
+    // 1-й блок плавно появляется СПРАВА с плавным стартом и ускорением (power2.inOut)
     tl.to(
-      reviewLeft,
+      reviewBody,
       {
         opacity: 1,
         x: 0,
-        duration: 1.0,
-        ease: 'power3.out',
+        duration: 1.35,
+        ease: 'power2.inOut',
         clearProps: 'transform,opacity'
       },
-      '-=0.3'
+      '-=0.4'
     )
 
-    // 3. Highlighted conclusion quote appears from the RIGHT
+    // 2-й блок плавно появляется СЛЕВА навстречу с плавным стартом и ускорением (power2.inOut)
     tl.to(
-      reviewRight,
+      reviewQuote,
       {
         opacity: 1,
         x: 0,
-        duration: 1.0,
-        ease: 'power3.out',
+        duration: 1.35,
+        ease: 'power2.inOut',
         clearProps: 'transform,opacity'
       },
-      '-=0.6'
+      '-=0.95'
     )
 
     return () => {
-      gsap.set([header, author, reviewLeft, reviewRight].filter(Boolean), { clearProps: 'all' })
+      gsap.set([header, author, reviewBody, reviewQuote].filter(Boolean), { clearProps: 'all' })
     }
   })
 
   // Screens < lg (< 1024px): reset cleanly to static layout without shifts
   mm.add('(max-width: 1023px)', () => {
-    gsap.set([header, author, reviewLeft, reviewRight].filter(Boolean), { clearProps: 'all' })
+    gsap.set([header, author, reviewBody, reviewQuote].filter(Boolean), { clearProps: 'all' })
   })
 }
 
