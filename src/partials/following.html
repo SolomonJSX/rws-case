@@ -259,9 +259,9 @@
         </div>
 
         <!-- 08 Отзыв клиента -->
-        <div class="max-w-[770px] mx-auto mb-12 sm:mb-16 lg:mb-[80px]">
+        <div class="rws-review max-w-[770px] mx-auto mb-12 sm:mb-16 lg:mb-[80px]">
             <div
-                class="rws-following-content mb-6 sm:mb-8 lg:mb-[40px] w-full text-white space-y-3 sm:space-y-4 lg:space-y-[30px] text-center lg:text-left mx-auto lg:mx-0 shrink-0">
+                class="rws-review-header mb-6 sm:mb-8 lg:mb-[40px] w-full text-white space-y-3 sm:space-y-4 lg:space-y-[30px] text-center lg:text-left mx-auto lg:mx-0 shrink-0">
                 <div class="flex items-center justify-center lg:justify-start gap-2.5 sm:gap-[15px]">
                     <div>
                         <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -280,7 +280,7 @@
             </div>
 
             <div class="text-white">
-                <div class="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4 sm:gap-[30px] mb-6 sm:mb-[10px]">
+                <div class="rws-review-author flex flex-col sm:flex-row items-center text-center sm:text-left gap-4 sm:gap-[30px] mb-6 sm:mb-[10px]">
                     <div class="overflow-hidden shrink-0 rounded-full w-20 h-20 sm:w-fit sm:h-fit">
                         <img src="img/review-avatar.webp" class="w-full h-full sm:w-auto sm:h-auto block object-cover" alt="Review Avatar">
                     </div>
@@ -295,8 +295,8 @@
                     </div>
                 </div>
 
-                <div class="pl-0 sm:pl-[45px] space-y-4 sm:space-y-[20px]">
-                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-[20px] items-start">
+                <div class="space-y-4 sm:space-y-[20px]">
+                    <div class="rws-review-left flex flex-col sm:flex-row gap-4 sm:gap-[20px] items-start pl-0 sm:pl-[45px]">
                         <div class="shrink-0 hidden sm:block">
                             <img src="icons/review-next.svg" alt="Review Next">
                         </div>
@@ -320,14 +320,15 @@
                                 возникающие
                                 вопросы. Обучение было действительно полезным и применимым в работе.
                             </p>
-                            <div class="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-start gap-2">
-                                <p class="text-sm sm:text-[16px]/[20px] uppercase font-extrabold italic max-w-[540px]">
-                                    Спасибо команде b24.kz за качественное обучение и практический подход!
-                                </p>
-
-                                <img src="icons/review-prev.svg" alt="Review Icons" class="w-auto h-auto block shrink-0">
-                            </div>
                         </div>
+                    </div>
+
+                    <div class="rws-review-right flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-start gap-2 pl-0 sm:pl-[85px]">
+                        <p class="text-sm sm:text-[16px]/[20px] uppercase font-extrabold italic max-w-[540px]">
+                            Спасибо команде b24.kz за качественное обучение и практический подход!
+                        </p>
+
+                        <img src="icons/review-prev.svg" alt="Review Icons" class="w-auto h-auto block shrink-0">
                     </div>
                 </div>
             </div>

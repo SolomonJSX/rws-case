@@ -972,6 +972,119 @@ function initFollowingAnimation() {
   })
 }
 
+function initReviewAnimation() {
+  const reviewSection = document.querySelector('.rws-review')
+  if (!reviewSection || !window.gsap) return
+
+  const gsap = window.gsap
+  const header = reviewSection.querySelector('.rws-review-header')
+  const author = reviewSection.querySelector('.rws-review-author')
+  const reviewLeft = reviewSection.querySelector('.rws-review-left')
+  const reviewRight = reviewSection.querySelector('.rws-review-right')
+
+  if (!reviewLeft || !reviewRight) return
+
+  const mm = gsap.matchMedia()
+
+  // Animate starting from lg (min-width: 1024px)
+  mm.add('(min-width: 1024px)', () => {
+    // Initial hidden states:
+    // Left side (quote & paragraphs) shifted to the left
+    gsap.set(reviewLeft, {
+      opacity: 0,
+      x: -90
+    })
+
+    // Right side (highlight callout & right quote) shifted to the right
+    gsap.set(reviewRight, {
+      opacity: 0,
+      x: 90
+    })
+
+    if (header) {
+      gsap.set(header, {
+        opacity: 0,
+        y: 25
+      })
+    }
+
+    if (author) {
+      gsap.set(author, {
+        opacity: 0,
+        x: -35
+      })
+    }
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: reviewSection,
+        start: 'top 75%',
+        once: true
+      }
+    })
+
+    // 1. Header & author smoothly fade/slide in
+    if (header) {
+      tl.to(header, {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+        ease: 'power2.out',
+        clearProps: 'transform,opacity'
+      })
+    }
+
+    if (author) {
+      tl.to(
+        author,
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.7,
+          ease: 'power2.out',
+          clearProps: 'transform,opacity'
+        },
+        header ? '-=0.4' : 0
+      )
+    }
+
+    // 2. Main review text appears from the LEFT
+    tl.to(
+      reviewLeft,
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1.0,
+        ease: 'power3.out',
+        clearProps: 'transform,opacity'
+      },
+      '-=0.3'
+    )
+
+    // 3. Highlighted conclusion quote appears from the RIGHT
+    tl.to(
+      reviewRight,
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1.0,
+        ease: 'power3.out',
+        clearProps: 'transform,opacity'
+      },
+      '-=0.6'
+    )
+
+    return () => {
+      gsap.set([header, author, reviewLeft, reviewRight].filter(Boolean), { clearProps: 'all' })
+    }
+  })
+
+  // Screens < lg (< 1024px): reset cleanly to static layout without shifts
+  mm.add('(max-width: 1023px)', () => {
+    gsap.set([header, author, reviewLeft, reviewRight].filter(Boolean), { clearProps: 'all' })
+  })
+}
+
 function initAllAnimations() {
   initHeroAnimation()
   initGoalAnimation()
@@ -980,6 +1093,7 @@ function initAllAnimations() {
   initSpecialsAnimation()
   initResultAnimation()
   initFollowingAnimation()
+  initReviewAnimation()
 }
 
 if (document.readyState === 'loading') {
