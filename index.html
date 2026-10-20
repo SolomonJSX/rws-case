@@ -1,0 +1,2009 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RWS Case</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="module" crossorigin src="./js/script.js"></script>
+  <link rel="stylesheet" crossorigin href="./css/styles.css">
+</head>
+
+<body>
+  <div class="rws text-main">
+    <div class="relative rws-hero pt-[95px] pb-10 sm:pt-[120px] sm:pb-14 lg:pt-[185px] lg:pb-[72px] px-4 sm:px-6 lg:px-0 bg-[url(../img/hero-bg.webp)] bg-cover bg-top bg-no-repeat overflow-hidden">
+    <div class="rws-hero-vector absolute top-[5px] sm:top-[17px] lg:top-[34px] left-3 sm:left-6 lg:left-[47px] pointer-events-none opacity-0">
+        <svg class="rws-hero-svg overflow-visible" width="745" height="138" viewBox="0 0 745 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="rws-hero-path" d="M0 2.5C288.182 2.50006 720 238.816 720 81.443" stroke-width="5"
+                stroke="url(#paint0_linear_36_6)" />
+            <g class="rws-hero-dot" filter="url(#filter0_d_36_6)" transform="translate(719.965, 81.11)">
+                <circle class="rws-hero-dot-rect" cx="0" cy="0" r="14.39" fill="#20B1AA" />
+                <circle class="rws-hero-dot-circle" cx="0" cy="0" r="7" fill="white" />
+            </g>
+            <defs>
+                <filter id="filter0_d_36_6" x="-100%" y="-100%" width="300%" height="300%"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.0627451 0 0 0 0 0.121569 0 0 0 0 0.14902 0 0 0 0.3 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_36_6" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_36_6" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear_36_6" x1="26.2493" y1="197.933" x2="720" y2="197.933"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0" />
+                    <stop offset="1" stop-color="white" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <div class="max-w-[663px] mx-auto text-center flex flex-col items-center justify-between gap-6 sm:gap-8 lg:gap-[40px]">
+        <img src="img/hero-logo.webp" alt="Hero Logo" class="rws-hero-logo w-[210px] sm:w-[260px] lg:w-auto opacity-0">
+
+        <div class="text-white space-y-4 sm:space-y-6 lg:space-y-[30px]">
+            <h6 class="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[42px]/[46px] italic">
+                От базовых инструментов до практики: <span class="text-brandGreen">обучение сотрудников Railways работе
+                    в Bitrix24</span>
+            </h6>
+            <p class="text-sm sm:text-base md:text-lg lg:text-[22px]/[28px]">
+                ТОО «Railways Systems KZ» – крупный оператор железнодорожной инфраструктуры и логистических сервисов
+                Казахстана. Компания работает с грузовыми и пассажирскими перевозками, управлением вагонным парком,
+                диспетчеризацией и сложными логистическими маршрутами по всей территории Казахстана.
+            </p>
+
+            <a href="https://rws.kz/" target="_blank" rel="noopener noreferrer"
+                class="group inline-flex items-center justify-center gap-2.5 sm:gap-3.5 lg:gap-[16px] w-fit mx-auto px-4 sm:px-5 py-1.5 sm:py-2 rounded-full border border-transparent transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-white/[0.08] hover:border-brandGreen/40 hover:shadow-[0_0_25px_rgba(32,177,170,0.35)] active:translate-y-0">
+                <div class="transition-transform duration-300 ease-out group-hover:scale-110 group-hover:translate-x-0.5">
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="text-brandGreen group-hover:text-[#63E2DB] transition-colors duration-300 drop-shadow-sm group-hover:drop-shadow-[0_0_8px_rgba(32,177,170,0.8)]">
+                        <path d="M8.43451 0L14 0L5.56549 18H0L8.43451 0Z" fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="relative py-0.5">
+                    <p class="text-base sm:text-lg md:text-xl lg:text-[22px]/[24px] uppercase italic font-extrabold text-brandGreen group-hover:text-white transition-colors duration-300 drop-shadow-sm group-hover:drop-shadow-[0_0_10px_rgba(32,177,170,0.7)]">
+                        rws.kz
+                    </p>
+                    <span class="absolute bottom-0 left-0 w-0 h-[2px] bg-gradient-to-r from-brandGreen to-[#63E2DB] rounded-full transition-all duration-300 ease-out group-hover:w-full"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <div class="rws-goal py-12 sm:py-16 md:py-20 lg:py-[120px] px-4 sm:px-6 xl:px-0 bg-[url(../img/goal-bg.webp)] bg-cover bg-center bg-no-repeat">
+    <div class="max-w-[1170px] mx-auto flex flex-col items-center lg:items-start lg:flex-row justify-between gap-8 sm:gap-10 lg:gap-0 relative">
+        <div class="max-w-[478px] lg:max-w-[420px] xl:max-w-[478px] mx-auto lg:mx-0 text-center lg:text-left flex flex-col items-center lg:items-start space-y-4 sm:space-y-6 lg:space-y-[30px]">
+            <div class="flex items-center justify-center lg:justify-start gap-3 sm:gap-[15px]">
+                <div>
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.43451 0L14 0L5.56549 18H0L8.43451 0Z" fill="#20B1AA" />
+                        <defs>
+                            <filter id="goal-icon-green" color-interpolation-filters="sRGB">
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.12549 0 0 0 0 0.694118 0 0 0 0 0.666667 0 0 0 1 0" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+                <p class="font-extrabold italic text-brandGreen text-base sm:text-lg md:text-xl lg:text-[22px]/[28px]">
+                    02
+                </p>
+            </div>
+
+            <h6 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px]/[72px] font-extrabold italic whitespace-nowrap xl:whitespace-normal">
+                Цель <span class="text-brandGreen">проекта</span>
+            </h6>
+
+            <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[22px]/[30px]">
+                Помощь сотрудникам разобраться в Bitrix24, освоение ключевых инструментов портала и применение их в
+                ежедневной работе.
+            </p>
+        </div>
+
+        <div class="w-full sm:w-auto mx-auto lg:mx-0 grid grid-cols-1 sm:grid-cols-2 justify-items-center lg:flex gap-4 sm:gap-5 lg:gap-[20px] lg:absolute lg:right-0">
+            <div class="w-full sm:w-auto flex flex-col items-center sm:items-stretch space-y-4 sm:space-y-5 lg:space-y-[60px] lg:my-[100px]">
+                <div class="rws-goal-card group p-4 sm:p-[20px] w-full sm:w-fit flex gap-4 sm:gap-[20px] items-center rounded-2xl sm:rounded-[30px] relative z-20">
+                    <div class="w-12 h-12 sm:w-[60px] sm:h-[60px] shrink-0 rounded-full bg-brandGreen group-hover:bg-white flex items-center justify-center transition-colors duration-300 relative z-10">
+                        <img src="icons/goal-icon1.svg" alt="Goal Square" class="w-7 h-7 sm:w-auto sm:h-auto transition-all duration-300 group-hover:[filter:url(#goal-icon-green)]">
+                    </div>
+
+                    <div class="space-y-[10px] relative z-10">
+                        <h6 class="text-base sm:text-lg md:text-xl xl:text-[22px]/[30px] font-semibold group-hover:text-white transition-colors duration-300">Задачи</h6>
+
+                        <div class="w-[112px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                        <div class="w-[112px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                        <div class="w-[66px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                    </div>
+
+                    <div class="rws-goal-vector hidden lg:block absolute top-full z-10 left-20 pointer-events-none">
+                        <svg class="rws-goal-svg overflow-visible" width="408" height="156" viewBox="0 0 408 156" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="rws-goal-path" d="M0 2.5C233.245 2.50006 382.745 258.987 382.745 101.5" stroke-width="5"
+                                stroke="url(#paint0_linear_45_6)" />
+                            <g class="rws-goal-dot" filter="url(#filter0_d_45_6)" transform="translate(382.745, 101.5)">
+                                <circle cx="0" cy="0" r="15" fill="#20B1AA" />
+                                <circle cx="0" cy="0" r="7" fill="white" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_45_6" x="-100%" y="-100%" width="300%" height="300%"
+                                    color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="5" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.0627451 0 0 0 0 0.121569 0 0 0 0 0.14902 0 0 0 0.3 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_45_6" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_45_6"
+                                        result="shape" />
+                                </filter>
+                                <linearGradient id="paint0_linear_45_6" x1="31.4757" y1="218.074" x2="382.746"
+                                    y2="218.074" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" stop-opacity="0" />
+                                    <stop offset="1" stop-color="white" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="rws-goal-card group p-4 sm:p-[20px] w-full sm:w-fit flex gap-4 sm:gap-[20px] items-center rounded-2xl sm:rounded-[30px] lg:ml-[30px] relative z-20">
+                    <div class="w-12 h-12 sm:w-[60px] sm:h-[60px] shrink-0 rounded-full bg-brandGreen group-hover:bg-white flex items-center justify-center transition-colors duration-300 relative z-10">
+                        <img src="icons/goal-icon2.svg" alt="Goal Square" class="w-7 h-7 sm:w-auto sm:h-auto transition-all duration-300 group-hover:[filter:url(#goal-icon-green)]">
+                    </div>
+
+                    <div class="space-y-[10px] relative z-10">
+                        <h6 class="text-base sm:text-lg md:text-xl lg:text-[22px]/[30px] font-semibold group-hover:text-white transition-colors duration-300">Календарь</h6>
+
+                        <div class="w-[112px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                        <div class="w-[112px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                        <div class="w-[66px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-auto flex flex-col items-center sm:items-stretch space-y-4 sm:space-y-5 lg:space-y-[60px]">
+                <div class="rws-goal-card group p-4 sm:p-[20px] w-full sm:w-fit flex gap-4 sm:gap-[20px] items-center rounded-2xl sm:rounded-[30px] relative z-20">
+                    <div class="w-12 h-12 sm:w-[60px] sm:h-[60px] shrink-0 rounded-full bg-brandGreen group-hover:bg-white flex items-center justify-center transition-colors duration-300 relative z-10">
+                        <img src="icons/goal-icon3.svg" alt="Goal Square" class="w-7 h-7 sm:w-auto sm:h-auto transition-all duration-300 group-hover:[filter:url(#goal-icon-green)]">
+                    </div>
+
+                    <div class="space-y-[10px] relative z-10">
+                        <h6 class="text-base sm:text-lg md:text-xl lg:text-[22px]/[30px] font-semibold group-hover:text-white transition-colors duration-300">CRM</h6>
+
+                        <div class="w-[112px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                        <div class="w-[112px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                        <div class="w-[66px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                    </div>
+                </div>
+
+                <div class="rws-goal-card group p-4 sm:p-[20px] w-full sm:w-fit flex gap-4 sm:gap-[20px] items-center rounded-2xl sm:rounded-[30px] lg:ml-[30px] relative z-20">
+                    <div class="w-12 h-12 sm:w-[60px] sm:h-[60px] shrink-0 rounded-full bg-brandGreen group-hover:bg-white flex items-center justify-center transition-colors duration-300 relative z-10">
+                        <img src="icons/goal-icon4.svg" alt="Goal Square" class="w-7 h-7 sm:w-auto sm:h-auto transition-all duration-300 group-hover:[filter:url(#goal-icon-green)]">
+                    </div>
+
+                    <div class="space-y-[10px] relative z-10">
+                        <h6 class="text-base sm:text-lg md:text-xl lg:text-[22px]/[30px] font-semibold group-hover:text-white transition-colors duration-300">Диск</h6>
+
+                        <div class="w-[112px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                        <div class="w-[112px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                        <div class="w-[66px] h-[4px] rounded-[50px] bg-[#DCE4EC] lg:bg-white group-hover:bg-white/40 transition-colors duration-300"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="rws-problems bg-[url(../img/problems-bg.webp)] bg-cover bg-center bg-no-repeat py-12 sm:py-16 md:py-20 lg:py-[120px] px-4 sm:px-6 xl:px-0">
+    <div class="max-w-[970px] mx-auto flex flex-col items-center lg:items-start lg:flex-row gap-8 sm:gap-10 lg:gap-[30px]">
+        <div class="contents lg:flex lg:flex-col lg:items-start lg:w-auto lg:max-w-[470px] lg:space-y-[110px] lg:shrink-0 lg:translate-y-64">
+            <div class="rws-problems-vector hidden lg:block lg:translate-x-5 pointer-events-none">
+                <svg class="rws-problems-svg overflow-visible" width="367" height="118" viewBox="0 0 367 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="rws-problems-path" d="M367.008 60.7051C133.763 60.7051 25.2546 -87.2948 25.2546 88.705" stroke-width="5"
+                        stroke="url(#paint0_linear_48_6)" />
+                    <g class="rws-problems-dot" filter="url(#filter0_d_48_6)" transform="translate(25.2546, 88.7052)">
+                        <circle cx="0" cy="0" r="15" fill="#20B1AA" />
+                        <circle cx="0" cy="0" r="7" fill="white" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_48_6" x="-100%" y="-100%" width="300%" height="300%"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="5" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.0627451 0 0 0 0 0.121569 0 0 0 0 0.14902 0 0 0 0.3 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_48_6" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_48_6" result="shape" />
+                        </filter>
+                        <linearGradient id="paint0_linear_48_6" x1="376.524" y1="205.279" x2="25.2543" y2="205.279"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" stop-opacity="0" />
+                            <stop offset="1" stop-color="white" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="bg-white p-6 sm:p-8 lg:p-[40px] rounded-3xl sm:rounded-[40px] lg:rounded-[50px] w-full max-w-[470px] space-y-4 sm:space-y-[20px] order-2 lg:order-none">
+                <div class="flex gap-4 sm:gap-[20px] items-center">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 lg:w-[80px] lg:h-[80px] rounded-full bg-brandGreen flex items-center justify-center shrink-0">
+                        <img src="icons/problems-icon1.svg" alt="Problems Icon" class="w-7 h-7 sm:w-8 sm:h-8 lg:w-auto lg:h-auto">
+                    </div>
+                    <h6 class="text-lg sm:text-xl lg:text-[22px]/[24px] italic font-extrabold uppercase">
+                        Что мешало эффективной работе
+                    </h6>
+                </div>
+
+                <ul class="space-y-[15px]">
+                    <li class="gap-3 sm:gap-[20px] flex items-start">
+                        <div
+                            class="border-gradient w-10 h-10 sm:w-[50px] sm:h-[50px] rounded-full shrink-0 flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-[30px] sm:h-[30px]" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.6499 7.0625L16.7749 4.0625C16.2749 3.5625 15.1499 3.3125 14.3999 3.3125H9.64991C8.14991 3.3125 6.52491 4.4375 6.14991 5.9375L3.14991 15.0625C2.52491 16.8125 3.64991 18.3125 5.52491 18.3125H10.5249C11.2749 18.3125 11.8999 18.9375 11.7749 19.8125L11.1499 23.8125C10.8999 24.9375 11.6499 26.1875 12.7749 26.5625C13.7749 26.9375 15.0249 26.4375 15.5249 25.6875L20.6499 18.0625"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke="#20B1AA" />
+                                <path
+                                    d="M27.0249 7.0625V19.3125C27.0249 21.0625 26.2749 21.6875 24.5249 21.6875H23.2749C21.5249 21.6875 20.7749 21.0625 20.7749 19.3125V7.0625C20.7749 5.3125 21.5249 4.6875 23.2749 4.6875H24.5249C26.2749 4.6875 27.0249 5.3125 27.0249 7.0625Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#20B1AA" />
+                            </svg>
+                        </div>
+
+                        <p class="text-sm sm:text-base lg:text-[18px]/[22px]">
+                            Сотрудники использовали возможности Битрикс24 не в полном объёме
+                        </p>
+                    </li>
+
+                    <li class="gap-3 sm:gap-[20px] flex items-start">
+                        <div
+                            class="border-gradient w-10 h-10 sm:w-[50px] sm:h-[50px] rounded-full shrink-0 flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-[30px] sm:h-[30px]" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.25 12.5H23.75C26.25 12.5 27.5 11.25 27.5 8.75V6.25C27.5 3.75 26.25 2.5 23.75 2.5H21.25C18.75 2.5 17.5 3.75 17.5 6.25V8.75C17.5 11.25 18.75 12.5 21.25 12.5Z"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="#20B1AA" />
+                                <path
+                                    d="M6.25 27.5H8.75C11.25 27.5 12.5 26.25 12.5 23.75V21.25C12.5 18.75 11.25 17.5 8.75 17.5H6.25C3.75 17.5 2.5 18.75 2.5 21.25V23.75C2.5 26.25 3.75 27.5 6.25 27.5Z"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="#20B1AA" />
+                                <path
+                                    d="M12.5 7.5C12.5 10.2614 10.2614 12.5 7.5 12.5C4.73858 12.5 2.5 10.2614 2.5 7.5C2.5 4.73858 4.73858 2.5 7.5 2.5C10.2614 2.5 12.5 4.73858 12.5 7.5Z"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="#20B1AA" />
+                                <path
+                                    d="M27.5 22.5C27.5 25.2614 25.2614 27.5 22.5 27.5C19.7386 27.5 17.5 25.2614 17.5 22.5C17.5 19.7386 19.7386 17.5 22.5 17.5C25.2614 17.5 27.5 19.7386 27.5 22.5Z"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="#20B1AA" />
+                            </svg>
+                        </div>
+
+                        <p class="text-sm sm:text-base lg:text-[18px]/[22px]">
+                            Не было единого понимания, какой инструмент использовать для конкретной задачи
+                        </p>
+                    </li>
+
+                    <li class="gap-3 sm:gap-[20px] flex items-start">
+                        <div
+                            class="border-gradient w-10 h-10 sm:w-[50px] sm:h-[50px] rounded-full shrink-0 flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-[30px] sm:h-[30px]" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 11.25V17.5" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="#20B1AA" />
+                                <path
+                                    d="M15 26.7626H7.42504C3.08754 26.7626 1.27504 23.6626 3.37504 19.8751L7.27504 12.8501L10.95 6.2501C13.175 2.2376 16.825 2.2376 19.05 6.2501L22.725 12.8626L26.625 19.8876C28.725 23.6751 26.9 26.7751 22.575 26.7751H15V26.7626Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#20B1AA" />
+                                <path d="M14.9932 21.25H15.0044" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="#20B1AA" />
+                            </svg>
+                        </div>
+
+                        <p class="text-sm sm:text-base lg:text-[18px]/[22px]">
+                            Возникали сложности при работе с задачами, CRM, календарем и другими разделами
+                        </p>
+                    </li>
+
+                    <li class="gap-3 sm:gap-[20px] flex items-start">
+                        <div
+                            class="border-gradient w-10 h-10 sm:w-[50px] sm:h-[50px] rounded-full shrink-0 flex items-center justify-center">
+                            <svg class="w-5 h-5 sm:w-[30px] sm:h-[30px]" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M27.5 20.9251V5.83761C27.5 4.33761 26.275 3.22511 24.7875 3.35011H24.7125C22.0875 3.57511 18.1 4.91261 15.875 6.31261L15.6625 6.45011C15.3 6.67511 14.7 6.67511 14.3375 6.45011L14.025 6.26261C11.8 4.87511 7.825 3.55011 5.2 3.33761C3.7125 3.21261 2.5 4.33761 2.5 5.82511V20.9251C2.5 22.1251 3.475 23.2501 4.675 23.4001L5.0375 23.4501C7.75 23.8126 11.9375 25.1876 14.3375 26.5001L14.3875 26.5251C14.725 26.7126 15.2625 26.7126 15.5875 26.5251C17.9875 25.2001 22.1875 23.8126 24.9125 23.4501L25.325 23.4001C26.525 23.2501 27.5 22.1251 27.5 20.9251Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#20B1AA" />
+                                <path d="M15 6.86255V25.6125" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="#20B1AA" />
+                                <path d="M9.6875 10.6125H6.875" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="#20B1AA" />
+                                <path d="M10.625 14.3625H6.875" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="#20B1AA" />
+                            </svg>
+                        </div>
+
+                        <p class="text-sm sm:text-base lg:text-[18px]/[22px]">
+                            Сотрудникам не хватало практических знаний для самостоятельной работы в системе
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contents lg:flex lg:flex-col lg:items-start lg:w-auto lg:max-w-[470px] lg:space-y-[60px]">
+            <div class="text-white space-y-4 sm:space-y-6 lg:space-y-[30px] text-center lg:text-left flex flex-col items-center lg:items-start w-full max-w-[470px] order-1 lg:order-none">
+                <div class="flex items-center justify-center lg:justify-start gap-3 sm:gap-[15px]">
+                    <div>
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.43451 0L14 0L5.56549 18H0L8.43451 0Z" fill="#20B1AA" />
+                        </svg>
+                    </div>
+                    <p
+                        class="font-extrabold italic text-brandGreen text-base sm:text-lg md:text-xl lg:text-[22px]/[28px]">
+                        03
+                    </p>
+                </div>
+
+                <h6 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px]/[72px] font-extrabold italic">
+                    Проблемы и задачи <span class="text-brandGreen">проекта</span>
+                </h6>
+
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[22px]/[30px] max-w-[445px]">
+                    Компания уже использует Bitrix24 как единое рабочее пространство, поэтому для эффективной работы
+                    сотрудников было важно сформировать понятный алгоритм работы с основными инструментами системы.
+                </p>
+            </div>
+
+            <div class="bg-brandGreen p-6 sm:p-8 lg:p-[40px] rounded-3xl sm:rounded-[40px] lg:rounded-[50px] w-full max-w-[470px] space-y-4 sm:space-y-[20px] order-3 lg:order-none">
+                <div class="flex gap-4 sm:gap-[20px] items-center">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 lg:w-[80px] lg:h-[80px] rounded-full bg-white flex items-center justify-center shrink-0">
+                        <img src="icons/problems-icon2.svg" alt="Problems Icon" class="w-7 h-7 sm:w-8 sm:h-8 lg:w-auto lg:h-auto">
+                    </div>
+                    <h6 class="text-lg sm:text-xl lg:text-[22px]/[24px] italic font-extrabold uppercase text-white">
+                        Перед командой стояли следующие задачи
+                    </h6>
+                </div>
+
+                <ul class="space-y-[15px]">
+                    <li class="group gap-[20px] flex items-start">
+                        <div
+                            class="border-gradient-white w-[50px] h-[50px] rounded-full shrink-0 flex items-center justify-center">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.4624 11.1001H22.0249" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="white" />
+                                <path d="M7.9751 11.1001L8.9126 12.0376L11.7251 9.2251" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+                                <path d="M15.4624 19.8501H22.0249" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="white" />
+                                <path d="M7.9751 19.8501L8.9126 20.7876L11.7251 17.9751" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+                                <path
+                                    d="M11.25 27.5H18.75C25 27.5 27.5 25 27.5 18.75V11.25C27.5 5 25 2.5 18.75 2.5H11.25C5 2.5 2.5 5 2.5 11.25V18.75C2.5 25 5 27.5 11.25 27.5Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+                            </svg>
+                        </div>
+
+                        <p class="text-[18px]/[22px] text-white">
+                            Систематизировать знания команды о возможностях Битрикс24
+                        </p>
+                    </li>
+
+                    <li class="group gap-[20px] flex items-start">
+                        <div
+                            class="border-gradient-white w-[50px] h-[50px] rounded-full shrink-0 flex items-center justify-center">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.625 11.875L15.375 17.125L13.375 14.125L9.375 18.125" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+                                <path d="M18.125 11.875H20.625V14.375" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="white" />
+                                <path
+                                    d="M11.25 27.5H18.75C25 27.5 27.5 25 27.5 18.75V11.25C27.5 5 25 2.5 18.75 2.5H11.25C5 2.5 2.5 5 2.5 11.25V18.75C2.5 25 5 27.5 11.25 27.5Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+                            </svg>
+                        </div>
+
+                        <p class="text-[18px]/[22px] text-white">
+                            Научить эффективно работать с задачами и проектами
+                        </p>
+                    </li>
+
+                    <li class="group gap-[20px] flex items-start">
+                        <div
+                            class="border-gradient-white w-[50px] h-[50px] rounded-full shrink-0 flex items-center justify-center">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M27.0875 17.875L26.5875 24.125C26.4 26.0375 26.25 27.5 22.8625 27.5H7.13745C3.74995 27.5 3.59995 26.0375 3.41245 24.125L2.91245 17.875C2.81245 16.8375 3.13745 15.875 3.72495 15.1375C3.73745 15.125 3.73745 15.125 3.74995 15.1125C4.43745 14.275 5.47495 13.75 6.63745 13.75H23.3625C24.525 13.75 25.55 14.275 26.225 15.0875C26.2375 15.1 26.25 15.1125 26.25 15.125C26.8625 15.8625 27.2 16.825 27.0875 17.875Z"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke="white" />
+                                <path
+                                    d="M4.375 14.2876V7.8501C4.375 3.6001 5.4375 2.5376 9.6875 2.5376H11.275C12.8625 2.5376 13.225 3.0126 13.825 3.8126L15.4125 5.9376C15.8125 6.4626 16.05 6.7876 17.1125 6.7876H20.3C24.55 6.7876 25.6125 7.8501 25.6125 12.1001V14.3376"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="white" />
+                                <path d="M11.7876 21.25H18.2126" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+                            </svg>
+                        </div>
+
+                        <p class="text-[18px]/[22px] text-white">
+                            Освоить инструменты коммуникации, календаря и работы с файлами
+                        </p>
+                    </li>
+
+                    <li class="group gap-[20px] flex items-start">
+                        <div
+                            class="border-gradient-white w-[50px] h-[50px] rounded-full shrink-0 flex items-center justify-center">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.2 8.3125H19.7875C20.5875 8.3125 21.2375 8.9625 21.2375 9.7625V11.3625C21.2375 11.95 20.875 12.675 20.5125 13.0375L17.3875 15.8C16.95 16.1625 16.6625 16.8875 16.6625 17.475V20.6C16.6625 21.0375 16.375 21.6125 16.0125 21.8375L15 22.475C14.05 23.0625 12.75 22.4 12.75 21.2375V17.3875C12.75 16.875 12.4625 16.225 12.1625 15.8625L9.4 12.95C9.0375 12.6 8.75 11.9375 8.75 11.5V9.8375C8.75 8.9625 9.4 8.3125 10.2 8.3125Z"
+                                    stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="white" />
+                                <path
+                                    d="M11.25 27.5H18.75C25 27.5 27.5 25 27.5 18.75V11.25C27.5 5 25 2.5 18.75 2.5H11.25C5 2.5 2.5 5 2.5 11.25V18.75C2.5 25 5 27.5 11.25 27.5Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+                            </svg>
+                        </div>
+
+                        <p class="text-[18px]/[22px] text-white">
+                            Разобрать работу с CRM, лидами, сделками и планированием дел
+                        </p>
+                    </li>
+
+                    <li class="group gap-[20px] flex items-start">
+                        <div
+                            class="border-gradient-white w-[50px] h-[50px] rounded-full shrink-0 flex items-center justify-center">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M27.0752 13.0499L25.8502 18.2749C24.8002 22.7874 22.7252 24.6124 18.8252 24.2374C18.2002 24.1874 17.5252 24.0749 16.8002 23.8999L14.7002 23.3999C9.48772 22.1624 7.87522 19.5874 9.10022 14.3624L10.3252 9.12489C10.5752 8.06239 10.8752 7.13739 11.2502 6.37489C12.7127 3.34989 15.2002 2.53739 19.3752 3.52489L21.4627 4.01239C26.7002 5.23739 28.3002 7.82489 27.0752 13.0499Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+                                <path
+                                    d="M18.8249 24.2375C18.0499 24.7625 17.0749 25.2 15.8874 25.5875L13.9124 26.2375C8.94994 27.8375 6.33744 26.5 4.72494 21.5375L3.12494 16.6C1.52494 11.6375 2.84994 9.0125 7.81244 7.4125L9.78744 6.7625C10.2999 6.6 10.7874 6.4625 11.2499 6.375C10.8749 7.1375 10.5749 8.0625 10.3249 9.125L9.09994 14.3625C7.87494 19.5875 9.48744 22.1625 14.6999 23.4L16.7999 23.9C17.5249 24.075 18.1999 24.1875 18.8249 24.2375Z"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke="white" />
+                                <path d="M15.7998 10.6626L21.8623 12.2001" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="white" />
+                                <path d="M14.5752 15.5L18.2002 16.425" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke="white" />
+                            </svg>
+                        </div>
+
+                        <p class="text-[18px]/[22px] text-white">
+                            Закрепить знания на реальных рабочих ситуациях
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <div
+    class="rws-banner-1 py-10 sm:py-12 lg:py-[47px] px-4 sm:px-6 xl:px-0 bg-[linear-gradient(115.77deg,#20B1AA_17.44%,#0F817B_82.56%)]">
+    <div class="max-w-[970px] mx-auto text-white flex flex-col lg:flex-row items-center lg:justify-between text-center lg:text-left gap-6 sm:gap-8 lg:gap-[34px]">
+        <div class="space-y-2.5 sm:space-y-[10px] w-full lg:max-w-[643px] shrink-0">
+            <h6 class="text-2xl sm:text-3xl lg:text-[36px]/[36px] font-extrabold italic">
+                Обсудим внедрение Битрикс24 для вашей компании
+            </h6>
+            <p class="text-base sm:text-lg lg:text-[22px]/[28px] opacity-90">
+                Расскажите о своих задачах – предложим решение, которое поможет навести порядок в процессах и повысить
+                эффективность команды.
+            </p>
+        </div>
+
+        <button type="button" class="w-full sm:w-auto shrink-0 px-6 sm:px-8 lg:px-[30px] py-4 sm:py-[18px] lg:py-[20px] bg-white hover:bg-white/95 active:scale-95 text-brandGreen hover:text-[#0F817B] uppercase text-sm sm:text-base lg:text-[16px]/[16px] italic font-extrabold rounded-[15px] shadow-[0_10px_25px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_30px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:-translate-y-0.5">
+            что входило в  пограмму
+        </button>
+    </div>
+</div>
+    <div
+    class="rws-education py-12 sm:py-16 md:py-20 lg:pt-[120px] lg:pb-[140px] px-4 sm:px-6 xl:px-0 bg-[url(../img/education-bg.webp)] bg-cover bg-no-repeat bg-top">
+    <div class="max-w-[1170px] mx-auto">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8">
+            <div
+                class="max-w-[478px] space-y-4 sm:space-y-6 lg:space-y-[30px] text-center lg:text-left mx-auto lg:mx-0 shrink-0">
+                <div class="flex items-center justify-center lg:justify-start gap-3 sm:gap-[15px]">
+                    <div>
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.43451 0L14 0L5.56549 18H0L8.43451 0Z" fill="#20B1AA" />
+                            <defs>
+                                <filter id="goal-icon-green" color-interpolation-filters="sRGB">
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.12549 0 0 0 0 0.694118 0 0 0 0 0.666667 0 0 0 1 0" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p
+                        class="font-extrabold italic text-brandGreen text-base sm:text-lg md:text-xl lg:text-[22px]/[28px]">
+                        04
+                    </p>
+                </div>
+
+                <h6 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px]/[72px] font-extrabold italic">
+                    Как проходило <span class="text-brandGreen">обучение</span>
+                </h6>
+
+                <div class="space-y-[10px]">
+                    <p class="text-base sm:text-lg md:text-xl lg:text-[22px]/[30px] max-w-[445px] mx-auto lg:mx-0">
+                        Мы организовали обучение в двух форматах – онлайн и офлайн в головном офисе компании
+                    </p>
+
+                    <p class="text-sm sm:text-base lg:text-[18px]/[30px] text-main/50 italic">
+                        г. Экибастуз
+                    </p>
+                </div>
+            </div>
+
+            <!-- Vector line shown on desktop screens (hidden xl:block) -->
+            <div class="shrink-0 translate-y-16 translate-x-12 hidden 2xl:block rws-education-header-vector">
+                <svg width="441" height="97" viewBox="0 0 441 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="rws-education-header-path" d="M0.0932617 42.376C324.265 30.2795 415.093 178.487 415.093 21" stroke-width="5"
+                        stroke="url(#paint0_linear_57_2)" stroke-linecap="round" />
+                    <g class="rws-education-header-dot" filter="url(#filter0_d_57_2)" transform="translate(415.093, 21)">
+                        <circle cx="0" cy="0" r="15" fill="#20B1AA" />
+                        <circle cx="0" cy="0" r="7" fill="white" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_57_2" x="-100%" y="-100%" width="300%" height="300%"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="5" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.0627451 0 0 0 0 0.121569 0 0 0 0 0.14902 0 0 0 0.3 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_57_2" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_57_2" result="shape" />
+                        </filter>
+                        <linearGradient id="paint0_linear_57_2" x1="63.8236" y1="137.574" x2="415.094" y2="137.574"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" stop-opacity="0" />
+                            <stop offset="1" stop-color="white" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="w-full relative max-w-[994px] mx-auto h-[296px] hidden lg:block education-banner-track">
+            <!-- Background Vector from Figma -->
+            <div class="absolute inset-0 pointer-events-none z-10">
+                <svg class="w-full h-full education-banner-svg" viewBox="0 0 994 296" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="education-track-path"
+                        d="M135.5 143H270.5C281.546 143 290.5 134.046 290.5 123V95C290.5 83.9543 299.454 75 310.5 75H370H613.5H702C713.046 75 722 83.9543 722 95V123C722 134.046 730.954 143 742 143H864.5"
+                        stroke-width="10" stroke="url(#paint0_linear_52_1040)" stroke-linecap="round" />
+                    <!-- Dot 1 left -->
+                    <path class="education-track-dot education-track-dot-1"
+                        d="M207.5 143C207.5 146.59 204.59 149.5 201 149.5C197.41 149.5 194.5 146.59 194.5 143C194.5 139.41 197.41 136.5 201 136.5C204.59 136.5 207.5 139.41 207.5 143Z"
+                        fill="#20B1AA" stroke-width="3" stroke="white" />
+                    <!-- Dot 2 right -->
+                    <path class="education-track-dot education-track-dot-2"
+                        d="M803.5 143C803.5 146.59 800.59 149.5 797 149.5C793.41 149.5 790.5 146.59 790.5 143C790.5 139.41 793.41 136.5 797 136.5C800.59 136.5 803.5 139.41 803.5 143Z"
+                        fill="#20B1AA" stroke-width="3" stroke="white" />
+                    <!-- Dot 3 middle-left -->
+                    <path class="education-track-dot education-track-dot-3"
+                        d="M326.5 75C326.5 78.5899 323.59 81.5 320 81.5C316.41 81.5 313.5 78.5899 313.5 75C313.5 71.4101 316.41 68.5 320 68.5C323.59 68.5 326.5 71.4101 326.5 75Z"
+                        fill="#20B1AA" stroke-width="3" stroke="white" />
+                    <!-- Dot 4 middle-right -->
+                    <path class="education-track-dot education-track-dot-4"
+                        d="M672.5 75C672.5 78.5899 669.59 81.5 666 81.5C662.41 81.5 659.5 78.5899 659.5 75C659.5 71.4101 662.41 68.5 666 68.5C669.59 68.5 672.5 71.4101 672.5 75Z"
+                        fill="#20B1AA" stroke-width="3" stroke="white" />
+                    <defs>
+                        <linearGradient id="paint0_linear_52_1040" x1="135.5" y1="109" x2="864.5" y2="109"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#20B1AA" />
+                            <stop offset="1" stop-color="#101F26" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- Left Item: Онлайн / Zoom (Circle at top, Badge below) -->
+            <div class="education-item-left absolute left-[20px] top-[78px] flex flex-col items-center z-30">
+                <div
+                    class="w-[120px] h-[120px] rounded-full bg-white/20 backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex items-center justify-center shrink-0">
+                    <div
+                        class="w-[100px] h-[100px] rounded-full bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] flex items-center justify-center">
+                        <img src="icons/education-vector-icon1.svg" alt="Онлайн Zoom" class="w-[50px] h-[50px]">
+                    </div>
+                </div>
+
+                <div
+                    class="-mt-2.5 text-center w-[152px] py-[16px] px-[20px] rounded-[30px] bg-white/90 shadow-[0_10px_20px_rgba(16,31,38,0.15)]">
+                    <h6 class="font-bold text-[20px]/[24px] text-main">
+                        Онлайн
+                    </h6>
+                    <p class="text-[16px]/[20px] text-main/70">
+                        Zoom
+                    </p>
+                </div>
+            </div>
+
+            <!-- Middle Item: Экибастуз / Казахстан -->
+            <div
+                class="education-item-middle backdrop-blur-sm absolute left-[375px] top-[24px] w-[242px] h-[100px] p-[20px] rounded-[30px] bg-white/90 shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex items-center gap-[20px] z-30">
+                <div
+                    class="w-[60px] h-[60px] rounded-full shrink-0 backdrop-blur-sm flex justify-center items-center bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)]">
+                    <img src="icons/education-vector-icon2.svg" alt="Экибастуз" class="w-[30px] h-[30px]">
+                </div>
+
+                <div class="space-y-[2px]">
+                    <h6 class="font-bold text-[22px]/[26px] text-main">
+                        Экибастуз
+                    </h6>
+                    <p class="text-[16px]/[20px] text-main/70">
+                        Казахстан
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Item: Офлайн / Офис (Badge at top, Circle below) -->
+            <div class="education-item-right absolute left-[819px] top-[10px] flex flex-col items-center z-30">
+                <div
+                    class="text-center w-[155px] py-[16px] px-[20px] rounded-[30px] bg-white/90 shadow-[0_10px_20px_rgba(16,31,38,0.15)]">
+                    <h6 class="font-bold text-[20px]/[24px] text-main">
+                        Офлайн
+                    </h6>
+                    <p class="text-[16px]/[20px] text-main/70">
+                        Офис
+                    </p>
+                </div>
+
+                <div
+                    class="-mt-2.5 backdrop-blur-sm w-[120px] h-[120px] rounded-full bg-white/20 shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex items-center justify-center shrink-0">
+                    <div
+                        class="w-[100px] h-[100px] rounded-full bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] flex items-center justify-center">
+                        <img src="icons/education-vector-icon3.svg" alt="Офлайн Офис" class="w-[50px] h-[50px]">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile & Tablet Version (< 1024px): Uniform cards connected vertically like a railway track -->
+        <div class="relative max-w-[320px] mx-auto mt-8 mb-4 lg:hidden">
+            <!-- Vertical Track connecting the cards -->
+            <div class="absolute left-[39px] top-[40px] bottom-[40px] w-[8px] pointer-events-none -translate-x-1/2">
+                <svg class="w-full h-full" viewBox="0 0 8 300" preserveAspectRatio="none" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <line x1="4" y1="0" x2="4" y2="300" stroke="url(#paint_mob_track)" stroke-width="8"
+                        stroke-linecap="round" />
+                    <defs>
+                        <linearGradient id="paint_mob_track" x1="4" y1="0" x2="4" y2="300"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#20B1AA" />
+                            <stop offset="0.5" stop-color="#63E2DB" />
+                            <stop offset="1" stop-color="#101F26" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="relative z-10 flex flex-col gap-6">
+                <!-- 1. Онлайн Zoom -->
+                <div
+                    class="w-full p-[14px_20px] rounded-[30px] bg-white/95 shadow-[0_10px_20px_rgba(16,31,38,0.12)] backdrop-blur-md flex items-center gap-[16px]">
+                    <div
+                        class="w-[50px] h-[50px] rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] shadow-sm">
+                        <img src="icons/education-vector-icon1.svg" alt="Онлайн Zoom" class="w-[26px] h-[26px]">
+                    </div>
+                    <div class="space-y-[1px]">
+                        <h6 class="font-bold text-[18px]/[22px] text-main">
+                            Онлайн
+                        </h6>
+                        <p class="text-[14px]/[18px] text-main/70">
+                            Zoom
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. Экибастуз Казахстан -->
+                <div
+                    class="w-full p-[14px_20px] rounded-[30px] bg-white/95 shadow-[0_10px_20px_rgba(16,31,38,0.12)] backdrop-blur-md flex items-center gap-[16px]">
+                    <div
+                        class="w-[50px] h-[50px] rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] shadow-sm">
+                        <img src="icons/education-vector-icon2.svg" alt="Экибастуз" class="w-[26px] h-[26px]">
+                    </div>
+                    <div class="space-y-[1px]">
+                        <h6 class="font-bold text-[18px]/[22px] text-main">
+                            Экибастуз
+                        </h6>
+                        <p class="text-[14px]/[18px] text-main/70">
+                            Казахстан
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 3. Офлайн Офис -->
+                <div
+                    class="w-full p-[14px_20px] rounded-[30px] bg-white/95 shadow-[0_10px_20px_rgba(16,31,38,0.12)] backdrop-blur-md flex items-center gap-[16px]">
+                    <div
+                        class="w-[50px] h-[50px] rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] shadow-sm">
+                        <img src="icons/education-vector-icon3.svg" alt="Офлайн Офис" class="w-[26px] h-[26px]">
+                    </div>
+                    <div class="space-y-[1px]">
+                        <h6 class="font-bold text-[18px]/[22px] text-main">
+                            Офлайн
+                        </h6>
+                        <p class="text-[14px]/[18px] text-main/70">
+                            Офис
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-[970px] mx-auto flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-10 lg:gap-[30px]">
+            <div
+                class="w-full max-w-[470px] flex flex-col justify-between rounded-3xl sm:rounded-[40px] lg:rounded-[50px] bg-white/90 shadow-[0_10px_20px_0_rgba(16,31,38,0.15)] backdrop-blur-md relative">
+                <!-- 01 with full top glyph (hidden on mobile/tablet, visible on desktop lg:) -->
+                <div class="absolute -top-[105px] right-[10px] pointer-events-none select-none z-30 w-[217px] h-[145px] hidden lg:flex items-start justify-end"
+                    style="-webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0) 100%); mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0) 100%);">
+                    <span class="inline-block text-[200px] leading-none font-extrabold italic text-[#CCEAE9]">
+                        01
+                    </span>
+                </div>
+
+                <div class="p-6 sm:p-8 lg:px-[40px] lg:pt-[40px] lg:pb-[30px] relative z-10">
+                    <div class="flex items-start justify-between gap-3 mb-[10px]">
+                        <h6 class="text-xl sm:text-2xl lg:text-[26px]/[28px] font-extrabold uppercase italic max-w-[300px]">
+                            Онлайн-обучение в <span class="text-brandGreen">Zoom</span>
+                        </h6>
+                        <!-- Mobile number badge -->
+                        <span class="lg:hidden text-2xl sm:text-3xl font-extrabold italic text-brandGreen/40 shrink-0">
+                            01
+                        </span>
+                    </div>
+
+                    <p class="text-sm sm:text-base lg:text-[18px]/[24px] mb-[20px]">
+                        Онлайн-программа проходила в 3 потока по 10 сотрудников. Всего команда провела 6 обучающих
+                        встреч.
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-2 sm:gap-2.5 lg:gap-[10px] w-full mb-[10px]">
+                        <!-- Card 1 (3 потока) -->
+                        <div
+                            class="h-[175px] pt-[20px] pb-[16px] px-2 rounded-[25px] bg-[#EEF6F6] hover:bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] group transition-all duration-300 flex flex-col items-center justify-between text-center shadow-sm hover:shadow-md hover:scale-[1.02]">
+                            <div
+                                class="w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
+                                <img src="icons/education-card-icon1.svg" alt="3 потока" class="w-[26px] h-[26px]">
+                            </div>
+                            <div class="my-auto space-y-0.5">
+                                <div
+                                    class="text-[28px]/[30px] sm:text-[32px]/[32px] font-extrabold italic text-brandGreen group-hover:text-white transition-colors duration-300">
+                                    3
+                                </div>
+                                <div
+                                    class="text-[12px]/[15px] sm:text-[14px]/[18px] font-medium text-main group-hover:text-white transition-colors duration-300">
+                                    потока
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 (10 сотрудников) -->
+                        <div
+                            class="h-[175px] pt-[20px] pb-[16px] px-2 rounded-[25px] bg-[#EEF6F6] hover:bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] group transition-all duration-300 flex flex-col items-center justify-between text-center shadow-sm hover:shadow-md hover:scale-[1.02]">
+                            <div
+                                class="w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
+                                <img src="icons/education-card-icon2.svg" alt="10 сотрудников"
+                                    class="w-[26px] h-[26px]">
+                            </div>
+                            <div class="my-auto space-y-0.5">
+                                <div
+                                    class="text-[28px]/[30px] sm:text-[32px]/[32px] font-extrabold italic text-brandGreen group-hover:text-white transition-colors duration-300">
+                                    10
+                                </div>
+                                <div
+                                    class="text-[12px]/[15px] sm:text-[14px]/[18px] font-medium text-main group-hover:text-white transition-colors duration-300">
+                                    сотрудников
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 (6 обучающих встреч) -->
+                        <div
+                            class="h-[175px] pt-[20px] pb-[16px] px-2 rounded-[25px] bg-[#EEF6F6] hover:bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] group transition-all duration-300 flex flex-col items-center justify-between text-center shadow-sm hover:shadow-md hover:scale-[1.02]">
+                            <div
+                                class="w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
+                                <img src="icons/education-card-icon3.svg" alt="6 обучающих встреч"
+                                    class="w-[26px] h-[26px]">
+                            </div>
+                            <div class="my-auto space-y-0.5">
+                                <div
+                                    class="text-[28px]/[30px] sm:text-[32px]/[32px] font-extrabold italic text-brandGreen group-hover:text-white transition-colors duration-300">
+                                    6
+                                </div>
+                                <div
+                                    class="text-[12px]/[15px] sm:text-[14px]/[18px] font-medium text-main group-hover:text-white transition-colors duration-300 leading-tight">
+                                    обучающих<br>встреч
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-[20px] rounded-[25px] bg-white shadow-[0_0_20px_0_#00474426] space-y-[5px] mb-[10px]">
+                        <h6 class="font-semibold text-[14px]/[16px]">
+                            Каждая встреча длилась около 1 часа
+                        </h6>
+                        <p class="text-[14px]/[16px]">
+                            За это время специалисты b24.kz последовательно разбирали отдельный блок возможностей
+                            Bitrix24, показывали инструменты на практике и отвечали на вопросы сотрудников.
+                        </p>
+                    </div>
+
+                    <div class="p-[20px] rounded-[25px] bg-white shadow-[0_0_20px_0_#00474426] space-y-[5px]">
+                        <h6 class="font-semibold text-[14px]/[16px]">
+                            Для обучения сотрудников использовали <a href="#"
+                                class="text-brandGreen underline">демо-портал Bitrix24</a>
+                        </h6>
+                        <p class="text-[14px]/[16px]">
+                            Это позволило участникам не просто слушать объяснения, а ориентироваться в интерфейсе и
+                            лучше понимать логику работы системы
+                        </p>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden rounded-3xl sm:rounded-[40px] lg:rounded-[50px] max-w-[470px] relative mt-4 lg:mt-0">
+                    <img src="img/education-img1.webp" alt="Education Image" class="w-full h-auto block" />
+
+                    <p
+                        class="education-program-btn absolute bottom-[20px] sm:bottom-[30px] left-1/2 -translate-x-1/2 whitespace-nowrap rounded-[15px] uppercase text-xs sm:text-sm lg:text-[16px]/[16px] font-extrabold italic text-white py-3 sm:py-[15px] px-5 sm:px-[30px] cursor-pointer hover:opacity-95 transition-all">
+                        что входило в программу
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="w-full max-w-[470px] flex flex-col justify-between rounded-3xl sm:rounded-[40px] lg:rounded-[50px] bg-white/90 shadow-[0_10px_20px_0_rgba(16,31,38,0.15)] backdrop-blur-md relative">
+                <!-- 02 with full top glyph (hidden on mobile/tablet, visible on desktop lg:) -->
+                <div class="absolute -top-[105px] right-[10px] pointer-events-none select-none z-30 w-[280px] h-[145px] hidden lg:flex items-start justify-end"
+                    style="-webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0) 100%); mask-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0) 100%);">
+                    <span class="inline-block text-[200px] leading-none font-extrabold italic text-[#CCEAE9] pr-1">
+                        02
+                    </span>
+                </div>
+
+                <div class="p-6 sm:p-8 lg:px-[40px] lg:pt-[40px] lg:pb-[30px] relative z-10">
+                    <div class="flex items-start justify-between gap-3 mb-[10px]">
+                        <h6 class="max-w-[300px] text-xl sm:text-2xl lg:text-[26px]/[28px] font-extrabold uppercase italic">
+                            Офлайн-обучение в <span class="text-brandGreen">Экибастузе</span>
+                        </h6>
+                        <!-- Mobile number badge -->
+                        <span class="lg:hidden text-2xl sm:text-3xl font-extrabold italic text-brandGreen/40 shrink-0">
+                            02
+                        </span>
+                    </div>
+
+                    <p class="text-sm sm:text-base lg:text-[18px]/[24px] mb-[20px]">
+                        Чтобы дополнить онлайн-обучение практической работой, специалист b24.kz приехал в Экибастуз и
+                        провел очное обучение для сотрудников ТОО «Railways Systems KZ».
+                    </p>
+
+                    <div class="space-y-[10px]">
+                        <div
+                            class="bg-[#EEF6F6] hover:bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] group transition-all duration-300 p-[20px] rounded-[25px] flex items-center gap-[20px] shadow-sm hover:shadow-md">
+                            <div
+                                class="w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
+                                <img src="icons/education-calendar.svg" alt="Education Calender" class="w-6 h-6">
+                            </div>
+
+                            <p
+                                class="text-[16px]/[20px] text-main group-hover:text-white transition-colors duration-300">
+                                Офлайн-часть была организована в формате двух дней.
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-[#EEF6F6] hover:bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] group transition-all duration-300 p-[20px] rounded-[25px] flex items-start gap-[20px] shadow-sm hover:shadow-md">
+                            <div
+                                class="w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
+                                <span class="text-[32px]/[20px] font-extrabold italic text-brandGreen">1</span>
+                            </div>
+
+                            <p
+                                class="text-[16px]/[20px] text-main group-hover:text-white transition-colors duration-300">
+                                1 день был посвящен лекционной части и последовательному разбору возможностей Bitrix24.
+                            </p>
+                        </div>
+
+                        <div
+                            class="bg-[#EEF6F6] hover:bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] group transition-all duration-300 p-[20px] rounded-[25px] flex items-start gap-[20px] shadow-sm hover:shadow-md">
+                            <div
+                                class="w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
+                                <span class="text-[32px]/[20px] font-extrabold italic text-brandGreen">2</span>
+                            </div>
+
+                            <p
+                                class="text-[16px]/[20px] text-main group-hover:text-white transition-colors duration-300">
+                                2 день полностью посвятили вопросам сотрудников в рабочем контексте. Специалист также
+                                разбирал конкретные ситуации и помогал разобраться с инструментами портала 
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="overflow-hidden rounded-3xl sm:rounded-[40px] lg:rounded-[50px] max-w-[470px] mt-4 lg:mt-0">
+                    <img src="img/education-img2.webp" alt="Education Image" class="w-full h-auto block" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+    <div
+    class="rws-specials bg-[url(../img/specials-bg.webp)] bg-cover bg-center bg-no-repeat py-12 sm:py-16 md:py-20 lg:py-[120px] px-4 sm:px-6 xl:px-0 overflow-hidden">
+    <div class="max-w-[1170px] mx-auto mb-10 lg:mb-[60px]">
+        <div class="text-white flex flex-col-reverse lg:flex-row items-center justify-between gap-8 mb-8 sm:mb-10 lg:mb-[40px]">
+            <div class="rws-specials-header-vector shrink-0 relative translate-y-10 lg:translate-y-20 hidden lg:block">
+                <svg width="367" height="118" viewBox="0 0 367 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="rws-specials-header-path" d="M0 60.7051C233.245 60.7051 341.754 -87.2948 341.754 88.705" stroke-width="5"
+                        stroke="url(#paint0_linear_58_6)" />
+                    <g class="rws-specials-header-dot" filter="url(#filter0_d_58_6)" transform="translate(341.754, 88.705)">
+                        <circle cx="0" cy="0" r="15" fill="#20B1AA" />
+                        <circle cx="0" cy="0" r="7" fill="white" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_58_6" x="-100%" y="-100%" width="300%" height="300%"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="5" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.0627451 0 0 0 0 0.121569 0 0 0 0 0.14902 0 0 0 0.3 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_58_6" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_58_6" result="shape" />
+                        </filter>
+                        <linearGradient id="paint0_linear_58_6" x1="-9.51616" y1="205.279" x2="341.754" y2="205.279"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" stop-opacity="0" />
+                            <stop offset="1" stop-color="white" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div
+                class="w-full max-w-[570px] space-y-3 sm:space-y-4 lg:space-y-[30px] text-center lg:text-left mx-auto lg:mx-0 shrink-0">
+                <div class="flex items-center justify-center lg:justify-start gap-2.5 sm:gap-[15px]">
+                    <div>
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.43451 0L14 0L5.56549 18H0L8.43451 0Z" fill="#20B1AA" />
+                        </svg>
+                    </div>
+                    <p
+                        class="font-extrabold italic text-brandGreen text-base sm:text-lg md:text-xl lg:text-[22px]/[28px]">
+                        05
+                    </p>
+                </div>
+
+                <h6 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px]/[72px] font-extrabold italic">
+                    Особенности <span class="text-brandGreen">проекта</span>
+                </h6>
+
+                <p
+                    class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[22px]/[30px] max-w-[445px] mx-auto lg:mx-0">
+                    Главная сложность проекта заключалась не в технической настройке Bitrix24, а в формировании у
+                    сотрудников понимания какие функции им действительно нужны, и как правильно применять.
+                </p>
+            </div>
+        </div>
+
+        <div
+            class="max-w-[970px] mx-auto p-6 sm:p-8 lg:p-[40px] flex flex-col sm:flex-row items-center gap-4 sm:gap-[20px] bg-white rounded-3xl sm:rounded-[40px] lg:rounded-[50px] shadow-[0_10px_20px_rgba(16,31,38,0.15)] text-center sm:text-left">
+            <div
+                class="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] rounded-full bg-[#20B1AA] flex items-center justify-center shrink-0">
+                <img src="icons/specials-book.svg" alt="Special Icon" class="w-8 h-8 sm:w-auto sm:h-auto">
+            </div>
+
+            <p class="text-lg sm:text-xl lg:text-[24px]/[28px] font-extrabold italic text-main">
+                Поэтому обучение мы выстроили от базовых возможностей к более специализированным:
+            </p>
+        </div>
+    </div>
+
+    <!-- Desktop Roadmap Timeline (Full-width vector track + 5 stations inside 1170px container) -->
+    <div class="relative w-full hidden lg:block h-[320px] mb-[40px]">
+        <div class="max-w-[1170px] mx-auto relative h-[314px] lg:scale-[0.85] xl:scale-100 lg:origin-center">
+            <!-- Full-bleed SVG track aligned to the 1170px container (offset -215px from 1600px Figma artboard) -->
+            <div class="absolute left-[-215px] top-0 w-[1600px] h-[314px] pointer-events-none z-0">
+                <svg width="1600" height="314" viewBox="0 0 1600 314" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-full h-full overflow-visible">
+                    <path
+                        d="M-2000 92.4014H510.296C521.613 92.4014 530.675 101.783 530.284 113.093L528.863 154.182L528.484 237.513C528.423 250.847 541.181 260.506 553.998 256.829L909.295 154.919C910.999 154.43 912.631 153.717 914.147 152.798L1051.11 69.7871C1056.89 66.2897 1060.5 60.1183 1060.74 53.3746L1061.83 21.7099C1062.2 10.9398 1070.8 2.96238 1081.28 5.487C1133.67 18.111 1263.21 67.3395 1386.09 113.412L2600 568.5"
+                        stroke="url(#paint0_linear_specials_track)" stroke-width="10" stroke-linecap="round" />
+                    <!-- Dedicated motion path for train dots -->
+                    <path id="specials-train-path"
+                        d="M-250 92.4014H510.296C521.613 92.4014 530.675 101.783 530.284 113.093L528.863 154.182L528.484 237.513C528.423 250.847 541.181 260.506 553.998 256.829L909.295 154.919C910.999 154.43 912.631 153.717 914.147 152.798L1051.11 69.7871C1056.89 66.2897 1060.5 60.1183 1060.74 53.3746L1061.83 21.7099C1062.2 10.9398 1070.8 2.96238 1081.28 5.487C1133.67 18.111 1263.21 67.3395 1386.09 113.412L1850 287.327"
+                        fill="none" stroke="none" class="pointer-events-none" />
+
+                    <!-- Moving Train Dots along the track -->
+                    <g class="specials-train-dots pointer-events-none">
+                        <g class="specials-train-dot" transform="translate(124, 92.4014)">
+                            <circle class="dot-glow" cx="0" cy="0" r="11" fill="#20B1AA" fill-opacity="0.25" />
+                            <circle class="dot-core" cx="0" cy="0" r="6.5" fill="#20B1AA" stroke="#FFFFFF"
+                                stroke-width="3" />
+                        </g>
+                        <g class="specials-train-dot" transform="translate(405, 92.4014)">
+                            <circle class="dot-glow" cx="0" cy="0" r="11" fill="#20B1AA" fill-opacity="0.25" />
+                            <circle class="dot-core" cx="0" cy="0" r="6.5" fill="#20B1AA" stroke="#FFFFFF"
+                                stroke-width="3" />
+                        </g>
+                        <g class="specials-train-dot" transform="translate(539, 256.401)">
+                            <circle class="dot-glow" cx="0" cy="0" r="11" fill="#20B1AA" fill-opacity="0.25" />
+                            <circle class="dot-core" cx="0" cy="0" r="6.5" fill="#20B1AA" stroke="#FFFFFF"
+                                stroke-width="3" />
+                        </g>
+                        <g class="specials-train-dot" transform="translate(914, 154.401)">
+                            <circle class="dot-glow" cx="0" cy="0" r="11" fill="#20B1AA" fill-opacity="0.25" />
+                            <circle class="dot-core" cx="0" cy="0" r="6.5" fill="#20B1AA" stroke="#FFFFFF"
+                                stroke-width="3" />
+                        </g>
+                        <g class="specials-train-dot" transform="translate(1156, 29.4014)">
+                            <circle class="dot-glow" cx="0" cy="0" r="11" fill="#20B1AA" fill-opacity="0.25" />
+                            <circle class="dot-core" cx="0" cy="0" r="6.5" fill="#20B1AA" stroke="#FFFFFF"
+                                stroke-width="3" />
+                        </g>
+                        <g class="specials-train-dot" transform="translate(1386, 113.412)">
+                            <circle class="dot-glow" cx="0" cy="0" r="11" fill="#20B1AA" fill-opacity="0.25" />
+                            <circle class="dot-core" cx="0" cy="0" r="6.5" fill="#20B1AA" stroke="#FFFFFF"
+                                stroke-width="3" />
+                        </g>
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_specials_track" x1="436" y1="58.4004" x2="2050" y2="58.4004"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#20B1AA" />
+                            <stop offset="0.75" stop-color="#101F26" />
+                            <stop offset="1" stop-color="#101F26" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- Station 1: понять структуру портала (222 - 215 = 7px) -->
+            <div
+                class="absolute left-[7px] top-[29px] w-[142px] flex flex-col items-center group z-20 hover:z-30 transition-transform duration-300 hover:-translate-y-1">
+                <div
+                    class="w-[120px] h-[120px] rounded-full bg-white/20 backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex items-center justify-center shrink-0 z-20 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-[0_10px_25px_rgba(32,177,170,0.3)]">
+                    <div
+                        class="relative w-[100px] h-[100px] rounded-full overflow-hidden bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] text-white flex items-center justify-center shadow-sm">
+                        <div
+                            class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-full">
+                        </div>
+                        <div
+                            class="relative z-10 transition-colors duration-300 group-hover:text-[#20B1AA] flex items-center justify-center">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.5834 16.6665H8.33341C6.04175 16.6665 4.16675 14.7915 4.16675 12.4998V8.33317C4.16675 6.0415 6.04175 4.1665 8.33341 4.1665H14.5834C16.8751 4.1665 18.7501 6.0415 18.7501 8.33317V12.4998C18.7501 14.7915 16.8751 16.6665 14.5834 16.6665Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M43.3333 14.5833H35.8332C34.4582 14.5833 33.3333 13.4583 33.3333 12.0833V8.75003C33.3333 7.37503 34.4582 6.25 35.8332 6.25H43.3333C44.7083 6.25 45.8333 7.37503 45.8333 8.75003V12.0833C45.8333 13.4583 44.7083 14.5833 43.3333 14.5833Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M43.3333 30.2083H35.8332C34.4582 30.2083 33.3333 29.0833 33.3333 27.7083V24.375C33.3333 23 34.4582 21.875 35.8332 21.875H43.3333C44.7083 21.875 45.8333 23 45.8333 24.375V27.7083C45.8333 29.0833 44.7083 30.2083 43.3333 30.2083Z"
+                                    fill="currentColor" />
+                                <path opacity="0.37"
+                                    d="M33.3333 27.604C34.1875 27.604 34.8958 26.8957 34.8958 26.0415C34.8958 25.1873 34.1875 24.479 33.3333 24.479H27.6042V11.979H33.3333C34.1875 11.979 34.8958 11.2707 34.8958 10.4165C34.8958 9.56234 34.1875 8.854 33.3333 8.854H18.75C17.8958 8.854 17.1875 9.56234 17.1875 10.4165C17.1875 11.2707 17.8958 11.979 18.75 11.979H24.4792V37.4998C24.4792 40.6665 27.0417 43.229 30.2083 43.229H33.3333C34.1875 43.229 34.8958 42.5207 34.8958 41.6665C34.8958 40.8123 34.1875 40.104 33.3333 40.104H30.2083C28.7708 40.104 27.6042 38.9373 27.6042 37.4998V27.604H33.3333Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M43.3333 45.8333H35.8332C34.4582 45.8333 33.3333 44.7083 33.3333 43.3333V40C33.3333 38.625 34.4582 37.5 35.8332 37.5H43.3333C44.7083 37.5 45.8333 38.625 45.8333 40V43.3333C45.8333 44.7083 44.7083 45.8333 43.3333 45.8333Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[142px] h-[78px] -mt-[10px] pt-[10px] rounded-[30px] bg-[linear-gradient(270deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex flex-col items-center justify-center text-center px-2 z-10 transition-all duration-300">
+                    <p
+                        class="font-normal not-italic text-[16px]/[16px] tracking-normal text-center text-white select-none">
+                        понять<br>структуру<br>портала
+                    </p>
+                </div>
+            </div>
+
+            <!-- Station 2: освоить основные инструменты (443 - 215 = 228px) -->
+            <div
+                class="absolute left-[228px] top-[29px] w-[173px] flex flex-col items-center group z-20 hover:z-30 transition-transform duration-300 hover:-translate-y-1">
+                <div
+                    class="w-[120px] h-[120px] rounded-full bg-white/20 backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex items-center justify-center shrink-0 z-20 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-[0_10px_25px_rgba(32,177,170,0.3)]">
+                    <div
+                        class="relative w-[100px] h-[100px] rounded-full overflow-hidden bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] text-white flex items-center justify-center shadow-sm">
+                        <div
+                            class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-full">
+                        </div>
+                        <div
+                            class="relative z-10 transition-colors duration-300 group-hover:text-[#20B1AA] flex items-center justify-center">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M4.16675 26.8332V23.1665C4.16675 20.9998 5.93758 19.2082 8.12508 19.2082C11.8959 19.2082 13.4376 16.5415 11.5417 13.2707C10.4584 11.3957 11.1042 8.95816 13.0001 7.87483L16.6042 5.81233C18.2501 4.83316 20.3751 5.41649 21.3542 7.06233L21.5834 7.45816C23.4584 10.729 26.5417 10.729 28.4376 7.45816L28.6667 7.06233C29.6459 5.41649 31.7709 4.83316 33.4167 5.81233L37.0209 7.87483C38.9167 8.95816 39.5626 11.3957 38.4792 13.2707C36.5834 16.5415 38.1251 19.2082 41.8959 19.2082C44.0626 19.2082 45.8542 20.979 45.8542 23.1665V26.8332C45.8542 28.9998 44.0834 30.7915 41.8959 30.7915C38.1251 30.7915 36.5834 33.4582 38.4792 36.729C39.5626 38.6248 38.9167 41.0415 37.0209 42.1248L33.4167 44.1873C31.7709 45.1665 29.6459 44.5832 28.6667 42.9373L28.4376 42.5415C26.5626 39.2707 23.4792 39.2707 21.5834 42.5415L21.3542 42.9373C20.3751 44.5832 18.2501 45.1665 16.6042 44.1873L13.0001 42.1248C11.1042 41.0415 10.4584 38.604 11.5417 36.729C13.4376 33.4582 11.8959 30.7915 8.12508 30.7915C5.93758 30.7915 4.16675 28.9998 4.16675 26.8332Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M25.0001 31.7707C28.7395 31.7707 31.7709 28.7393 31.7709 24.9998C31.7709 21.2604 28.7395 18.229 25.0001 18.229C21.2607 18.229 18.2292 21.2604 18.2292 24.9998C18.2292 28.7393 21.2607 31.7707 25.0001 31.7707Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[173px] h-[78px] -mt-[10px] pt-[10px] rounded-[30px] bg-[linear-gradient(270deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex flex-col items-center justify-center text-center px-2 z-10 transition-all duration-300">
+                    <p
+                        class="font-normal not-italic text-[16px]/[16px] tracking-normal text-center text-white select-none">
+                        освоить<br>основные<br>инструменты
+                    </p>
+                </div>
+            </div>
+
+            <!-- Station 3: попробовать их на практике (695 - 215 = 480px) -->
+            <div
+                class="absolute left-[480px] top-[95px] w-[186px] flex flex-col items-center group z-20 hover:z-30 transition-transform duration-300 hover:-translate-y-1">
+                <div
+                    class="w-[120px] h-[120px] rounded-full bg-white/20 backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex items-center justify-center shrink-0 z-20 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-[0_10px_25px_rgba(32,177,170,0.3)]">
+                    <div
+                        class="relative w-[100px] h-[100px] rounded-full overflow-hidden bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] text-white flex items-center justify-center shadow-sm">
+                        <div
+                            class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-full">
+                        </div>
+                        <div
+                            class="relative z-10 transition-colors duration-300 group-hover:text-[#20B1AA] flex items-center justify-center">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M24.9998 45.8332C36.5058 45.8332 45.8332 36.5058 45.8332 24.9998C45.8332 13.4939 36.5058 4.1665 24.9998 4.1665C13.4939 4.1665 4.1665 13.4939 4.1665 24.9998C4.1665 36.5058 13.4939 45.8332 24.9998 45.8332Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M33.6458 26.7294L30.0417 27.9377C29.0417 28.2711 28.2709 29.0419 27.9375 30.0419L26.7292 33.6461C25.7084 36.7502 21.3334 36.6877 20.375 33.5836L16.3125 20.5002C15.5209 17.8961 17.9167 15.5003 20.4792 16.2919L33.5833 20.3544C36.6875 21.3335 36.7292 25.7085 33.6458 26.7294Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[186px] h-[78px] -mt-[10px] pt-[10px] rounded-[30px] bg-[linear-gradient(270deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex flex-col items-center justify-center text-center px-2 z-10 transition-all duration-300">
+                    <p
+                        class="font-normal not-italic text-[16px]/[16px] tracking-normal text-center text-white select-none">
+                        попробовать<br>их на практике
+                    </p>
+                </div>
+            </div>
+
+            <!-- Station 4: разобрать вопросы (960 - 215 = 745px) -->
+            <div
+                class="absolute left-[745px] top-[29px] w-[149px] flex flex-col items-center group z-20 hover:z-30 transition-transform duration-300 hover:-translate-y-1">
+                <div
+                    class="w-[120px] h-[120px] rounded-full bg-white/20 backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex items-center justify-center shrink-0 z-20 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-[0_10px_25px_rgba(32,177,170,0.3)]">
+                    <div
+                        class="relative w-[100px] h-[100px] rounded-full overflow-hidden bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] text-white flex items-center justify-center shadow-sm">
+                        <div
+                            class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-full">
+                        </div>
+                        <div
+                            class="relative z-10 transition-colors duration-300 group-hover:text-[#20B1AA] flex items-center justify-center">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M45.8333 17.7498V8.2915C45.8333 5.354 44.5 4.1665 41.1875 4.1665H32.7708C29.4583 4.1665 28.125 5.354 28.125 8.2915V17.729C28.125 20.6873 29.4583 21.854 32.7708 21.854H41.1875C44.5 21.8748 45.8333 20.6873 45.8333 17.7498Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M45.8333 41.1875V32.7708C45.8333 29.4583 44.5 28.125 41.1875 28.125H32.7708C29.4583 28.125 28.125 29.4583 28.125 32.7708V41.1875C28.125 44.5 29.4583 45.8333 32.7708 45.8333H41.1875C44.5 45.8333 45.8333 44.5 45.8333 41.1875Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M21.8748 17.7498V8.2915C21.8748 5.354 20.5415 4.1665 17.229 4.1665H8.81234C5.49984 4.1665 4.1665 5.354 4.1665 8.2915V17.729C4.1665 20.6873 5.49984 21.854 8.81234 21.854H17.229C20.5415 21.8748 21.8748 20.6873 21.8748 17.7498Z"
+                                    fill="currentColor" />
+                                <path opacity="0.4"
+                                    d="M21.8748 41.1875V32.7708C21.8748 29.4583 20.5415 28.125 17.229 28.125H8.81234C5.49984 28.125 4.1665 29.4583 4.1665 32.7708V41.1875C4.1665 44.5 5.49984 45.8333 8.81234 45.8333H17.229C20.5415 45.8333 21.8748 44.5 21.8748 41.1875Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[149px] h-[78px] -mt-[10px] pt-[10px] rounded-[30px] bg-[linear-gradient(270deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex flex-col items-center justify-center text-center px-2 z-10 transition-all duration-300">
+                    <p
+                        class="font-normal not-italic text-[16px]/[16px] tracking-normal text-center text-white select-none">
+                        разобрать<br>вопросы
+                    </p>
+                </div>
+            </div>
+
+            <!-- Station 5: научиться применять Bitrix24 в рабочих задачах (1188 - 215 = 973px) -->
+            <div
+                class="absolute left-[972px] top-[29px] w-[198px] flex flex-col items-center group z-20 hover:z-30 transition-transform duration-300 hover:-translate-y-1">
+                <div
+                    class="w-[120px] h-[120px] rounded-full bg-white/20 backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex items-center justify-center shrink-0 z-20 transition-all duration-300 group-hover:bg-white/30 group-hover:shadow-[0_10px_25px_rgba(32,177,170,0.3)]">
+                    <div
+                        class="relative w-[100px] h-[100px] rounded-full overflow-hidden bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] text-white flex items-center justify-center shadow-sm">
+                        <div
+                            class="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-full">
+                        </div>
+                        <div
+                            class="relative z-10 transition-colors duration-300 group-hover:text-[#20B1AA] flex items-center justify-center">
+                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4"
+                                    d="M35.475 0H14.525C5.425 0 0 5.425 0 14.525V35.475C0 44.575 5.425 50 14.525 50H35.475C44.575 50 50 44.575 50 35.475V14.525C50 5.425 44.575 0 35.475 0Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M40.7749 17.1748C40.7749 18.1998 39.9499 19.0498 38.8999 19.0498H25.7749C24.7499 19.0498 23.8999 18.1998 23.8999 17.1748C23.8999 16.1498 24.7499 15.2998 25.7749 15.2998H38.8999C39.9499 15.2998 40.7749 16.1498 40.7749 17.1748Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M19.9249 14.7499L14.2999 20.3749C13.9249 20.7499 13.4499 20.9249 12.9749 20.9249C12.4999 20.9249 11.9999 20.7499 11.6499 20.3749L9.7749 18.4999C9.0249 17.7749 9.0249 16.5749 9.7749 15.8499C10.4999 15.1249 11.6749 15.1249 12.4249 15.8499L12.9749 16.3999L17.2749 12.0999C17.9999 11.3749 19.1749 11.3749 19.9249 12.0999C20.6499 12.8249 20.6499 14.0249 19.9249 14.7499Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M40.7749 34.6748C40.7749 35.6998 39.9499 36.5498 38.8999 36.5498H25.7749C24.7499 36.5498 23.8999 35.6998 23.8999 34.6748C23.8999 33.6498 24.7499 32.7998 25.7749 32.7998H38.8999C39.9499 32.7998 40.7749 33.6498 40.7749 34.6748Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M19.9249 32.2499L14.2999 37.8749C13.9249 38.2499 13.4499 38.4249 12.9749 38.4249C12.4999 38.4249 11.9999 38.2499 11.6499 37.8749L9.7749 35.9999C9.0249 35.2749 9.0249 34.0749 9.7749 33.3499C10.4999 32.6249 11.6749 32.6249 12.4249 33.3499L12.9749 33.8999L17.2749 29.5999C17.9999 28.8749 19.1749 28.8749 19.9249 29.5999C20.6499 30.3249 20.6499 31.5249 19.9249 32.2499Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="w-[198px] h-[78px] -mt-[10px] pt-[10px] rounded-[30px] bg-[linear-gradient(270deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-sm shadow-[0_10px_20px_rgba(16,31,38,0.15)] flex flex-col items-center justify-center text-center px-2 z-10 transition-all duration-300">
+                    <p
+                        class="font-normal not-italic text-[16px]/[16px] tracking-normal text-center text-white select-none">
+                        научиться<br>применять Bitrix24<br>в рабочих задачах
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile & Tablet Version (< 1024px): Uniform cards without line -->
+    <div class="w-full max-w-[360px] sm:max-w-[480px] mx-auto mt-6 sm:mt-8 mb-6 lg:hidden px-4 flex flex-col gap-3.5 sm:gap-4">
+            <!-- 1. понять структуру портала -->
+            <div
+                class="w-full p-[14px_18px] rounded-[30px] bg-[linear-gradient(270deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-md shadow-[0_10px_20px_rgba(16,31,38,0.25)] flex items-center gap-[16px] text-white">
+                <div
+                    class="w-[50px] h-[50px] rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] text-white shadow-md">
+                    <svg width="26" height="26" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.5834 16.6665H8.33341C6.04175 16.6665 4.16675 14.7915 4.16675 12.4998V8.33317C4.16675 6.0415 6.04175 4.1665 8.33341 4.1665H14.5834C16.8751 4.1665 18.7501 6.0415 18.7501 8.33317V12.4998C18.7501 14.7915 16.8751 16.6665 14.5834 16.6665Z"
+                            fill="currentColor" />
+                        <path
+                            d="M43.3333 14.5833H35.8332C34.4582 14.5833 33.3333 13.4583 33.3333 12.0833V8.75003C33.3333 7.37503 34.4582 6.25 35.8332 6.25H43.3333C44.7083 6.25 45.8333 7.37503 45.8333 8.75003V12.0833C45.8333 13.4583 44.7083 14.5833 43.3333 14.5833Z"
+                            fill="currentColor" />
+                        <path
+                            d="M43.3333 30.2083H35.8332C34.4582 30.2083 33.3333 29.0833 33.3333 27.7083V24.375C33.3333 23 34.4582 21.875 35.8332 21.875H43.3333C44.7083 21.875 45.8333 23 45.8333 24.375V27.7083C45.8333 29.0833 44.7083 30.2083 43.3333 30.2083Z"
+                            fill="currentColor" />
+                        <path opacity="0.37"
+                            d="M33.3333 27.604C34.1875 27.604 34.8958 26.8957 34.8958 26.0415C34.8958 25.1873 34.1875 24.479 33.3333 24.479H27.6042V11.979H33.3333C34.1875 11.979 34.8958 11.2707 34.8958 10.4165C34.8958 9.56234 34.1875 8.854 33.3333 8.854H18.75C17.8958 8.854 17.1875 9.56234 17.1875 10.4165C17.1875 11.2707 17.8958 11.979 18.75 11.979H24.4792V37.4998C24.4792 40.6665 27.0417 43.229 30.2083 43.229H33.3333C34.1875 43.229 34.8958 42.5207 34.8958 41.6665C34.8958 40.8123 34.1875 40.104 33.3333 40.104H30.2083C28.7708 40.104 27.6042 38.9373 27.6042 37.4998V27.604H33.3333Z"
+                            fill="currentColor" />
+                        <path
+                            d="M43.3333 45.8333H35.8332C34.4582 45.8333 33.3333 44.7083 33.3333 43.3333V40C33.3333 38.625 34.4582 37.5 35.8332 37.5H43.3333C44.7083 37.5 45.8333 38.625 45.8333 40V43.3333C45.8333 44.7083 44.7083 45.8333 43.3333 45.8333Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-normal not-italic text-[16px]/[16px] text-white">
+                        понять структуру портала
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. освоить основные инструменты -->
+            <div
+                class="w-full p-[14px_18px] rounded-[30px] bg-[linear-gradient(270deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-md shadow-[0_10px_20px_rgba(16,31,38,0.25)] flex items-center gap-[16px] text-white">
+                <div
+                    class="w-[50px] h-[50px] rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] text-white shadow-md">
+                    <svg width="26" height="26" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M4.16675 26.8332V23.1665C4.16675 20.9998 5.93758 19.2082 8.12508 19.2082C11.8959 19.2082 13.4376 16.5415 11.5417 13.2707C10.4584 11.3957 11.1042 8.95816 13.0001 7.87483L16.6042 5.81233C18.2501 4.83316 20.3751 5.41649 21.3542 7.06233L21.5834 7.45816C23.4584 10.729 26.5417 10.729 28.4376 7.45816L28.6667 7.06233C29.6459 5.41649 31.7709 4.83316 33.4167 5.81233L37.0209 7.87483C38.9167 8.95816 39.5626 11.3957 38.4792 13.2707C36.5834 16.5415 38.1251 19.2082 41.8959 19.2082C44.0626 19.2082 45.8542 20.979 45.8542 23.1665V26.8332C45.8542 28.9998 44.0834 30.7915 41.8959 30.7915C38.1251 30.7915 36.5834 33.4582 38.4792 36.729C39.5626 38.6248 38.9167 41.0415 37.0209 42.1248L33.4167 44.1873C31.7709 45.1665 29.6459 44.5832 28.6667 42.9373L28.4376 42.5415C26.5626 39.2707 23.4792 39.2707 21.5834 42.5415L21.3542 42.9373C20.3751 44.5832 18.2501 45.1665 16.6042 44.1873L13.0001 42.1248C11.1042 41.0415 10.4584 38.604 11.5417 36.729C13.4376 33.4582 11.8959 30.7915 8.12508 30.7915C5.93758 30.7915 4.16675 28.9998 4.16675 26.8332Z"
+                            fill="currentColor" />
+                        <path
+                            d="M25.0001 31.7707C28.7395 31.7707 31.7709 28.7393 31.7709 24.9998C31.7709 21.2604 28.7395 18.229 25.0001 18.229C21.2607 18.229 18.2292 21.2604 18.2292 24.9998C18.2292 28.7393 21.2607 31.7707 25.0001 31.7707Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-normal not-italic text-[16px]/[16px] text-white">
+                        освоить основные инструменты
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. попробовать их на практике -->
+            <div
+                class="w-full p-[14px_18px] rounded-[30px] bg-[linear-gradient(270deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-md shadow-[0_10px_20px_rgba(16,31,38,0.25)] flex items-center gap-[16px] text-white">
+                <div
+                    class="w-[50px] h-[50px] rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] text-white shadow-md">
+                    <svg width="26" height="26" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M24.9998 45.8332C36.5058 45.8332 45.8332 36.5058 45.8332 24.9998C45.8332 13.4939 36.5058 4.1665 24.9998 4.1665C13.4939 4.1665 4.1665 13.4939 4.1665 24.9998C4.1665 36.5058 13.4939 45.8332 24.9998 45.8332Z"
+                            fill="currentColor" />
+                        <path
+                            d="M33.6458 26.7294L30.0417 27.9377C29.0417 28.2711 28.2709 29.0419 27.9375 30.0419L26.7292 33.6461C25.7084 36.7502 21.3334 36.6877 20.375 33.5836L16.3125 20.5002C15.5209 17.8961 17.9167 15.5003 20.4792 16.2919L33.5833 20.3544C36.6875 21.3335 36.7292 25.7085 33.6458 26.7294Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-normal not-italic text-[16px]/[16px] text-white">
+                        попробовать их на практике
+                    </p>
+                </div>
+            </div>
+
+            <!-- 4. разобрать вопросы -->
+            <div
+                class="w-full p-[14px_18px] rounded-[30px] bg-[linear-gradient(270deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-md shadow-[0_10px_20px_rgba(16,31,38,0.25)] flex items-center gap-[16px] text-white">
+                <div
+                    class="w-[50px] h-[50px] rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] text-white shadow-md">
+                    <svg width="26" height="26" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M45.8333 17.7498V8.2915C45.8333 5.354 44.5 4.1665 41.1875 4.1665H32.7708C29.4583 4.1665 28.125 5.354 28.125 8.2915V17.729C28.125 20.6873 29.4583 21.854 32.7708 21.854H41.1875C44.5 21.8748 45.8333 20.6873 45.8333 17.7498Z"
+                            fill="currentColor" />
+                        <path
+                            d="M45.8333 41.1875V32.7708C45.8333 29.4583 44.5 28.125 41.1875 28.125H32.7708C29.4583 28.125 28.125 29.4583 28.125 32.7708V41.1875C28.125 44.5 29.4583 45.8333 32.7708 45.8333H41.1875C44.5 45.8333 45.8333 44.5 45.8333 41.1875Z"
+                            fill="currentColor" />
+                        <path
+                            d="M21.8748 17.7498V8.2915C21.8748 5.354 20.5415 4.1665 17.229 4.1665H8.81234C5.49984 4.1665 4.1665 5.354 4.1665 8.2915V17.729C4.1665 20.6873 5.49984 21.854 8.81234 21.854H17.229C20.5415 21.8748 21.8748 20.6873 21.8748 17.7498Z"
+                            fill="currentColor" />
+                        <path opacity="0.4"
+                            d="M21.8748 41.1875V32.7708C21.8748 29.4583 20.5415 28.125 17.229 28.125H8.81234C5.49984 28.125 4.1665 29.4583 4.1665 32.7708V41.1875C4.1665 44.5 5.49984 45.8333 8.81234 45.8333H17.229C20.5415 45.8333 21.8748 44.5 21.8748 41.1875Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-normal not-italic text-[16px]/[16px] text-white">
+                        разобрать вопросы
+                    </p>
+                </div>
+            </div>
+
+            <!-- 5. научиться применять Bitrix24 в рабочих задачах -->
+            <div
+                class="w-full p-[14px_18px] rounded-[30px] bg-[linear-gradient(270deg,rgba(255,255,255,0.5)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-md shadow-[0_10px_20px_rgba(16,31,38,0.25)] flex items-center gap-[16px] text-white">
+                <div
+                    class="w-[50px] h-[50px] rounded-full shrink-0 flex justify-center items-center bg-[linear-gradient(115.77deg,#63E2DB_17.44%,#20B1AA_82.56%)] text-white shadow-md">
+                    <svg width="26" height="26" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M35.475 0H14.525C5.425 0 0 5.425 0 14.525V35.475C0 44.575 5.425 50 14.525 50H35.475C44.575 50 50 44.575 50 35.475V14.525C50 5.425 44.575 0 35.475 0Z"
+                            fill="currentColor" />
+                        <path
+                            d="M40.7749 17.1748C40.7749 18.1998 39.9499 19.0498 38.8999 19.0498H25.7749C24.7499 19.0498 23.8999 18.1998 23.8999 17.1748C23.8999 16.1498 24.7499 15.2998 25.7749 15.2998H38.8999C39.9499 15.2998 40.7749 16.1498 40.7749 17.1748Z"
+                            fill="currentColor" />
+                        <path
+                            d="M19.9249 14.7499L14.2999 20.3749C13.9249 20.7499 13.4499 20.9249 12.9749 20.9249C12.4999 20.9249 11.9999 20.7499 11.6499 20.3749L9.7749 18.4999C9.0249 17.7749 9.0249 16.5749 9.7749 15.8499C10.4999 15.1249 11.6749 15.1249 12.4249 15.8499L12.9749 16.3999L17.2749 12.0999C17.9999 11.3749 19.1749 11.3749 19.9249 12.0999C20.6499 12.8249 20.6499 14.0249 19.9249 14.7499Z"
+                            fill="currentColor" />
+                        <path
+                            d="M40.7749 34.6748C40.7749 35.6998 39.9499 36.5498 38.8999 36.5498H25.7749C24.7499 36.5498 23.8999 35.6998 23.8999 34.6748C23.8999 33.6498 24.7499 32.7998 25.7749 32.7998H38.8999C39.9499 32.7998 40.7749 33.6498 40.7749 34.6748Z"
+                            fill="currentColor" />
+                        <path
+                            d="M19.9249 32.2499L14.2999 37.8749C13.9249 38.2499 13.4499 38.4249 12.9749 38.4249C12.4999 38.4249 11.9999 38.2499 11.6499 37.8749L9.7749 35.9999C9.0249 35.2749 9.0249 34.0749 9.7749 33.3499C10.4999 32.6249 11.6749 32.6249 12.4249 33.3499L12.9749 33.8999L17.2749 29.5999C17.9999 28.8749 19.1749 28.8749 19.9249 29.5999C20.6499 30.3249 20.6499 31.5249 19.9249 32.2499Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-normal not-italic text-[16px]/[16px] text-white">
+                        научиться применять Bitrix24 в рабочих задачах
+                    </p>
+                </div>
+            </div>
+    </div>
+
+    <div class="max-w-[970px] mx-auto text-white mt-8 sm:mt-12 lg:mt-[60px]">
+        <h6 class="text-lg sm:text-xl md:text-[22px]/[26px] font-extrabold italic text-center max-w-[550px] mx-auto mb-5 sm:mb-6 lg:mb-[20px] px-2">
+            Отдельная ценность проекта – <span class="text-brandGreen">сочетание двух форматов</span>
+        </h6>
+
+        <div class="flex flex-col lg:flex-row items-center lg:items-stretch justify-center lg:justify-between gap-4 sm:gap-5 lg:gap-[20px]">
+            <div
+                class="group w-full max-w-[475px] p-4 sm:p-[20px] rounded-2xl sm:rounded-[30px] bg-white/5 border border-white/10 hover:border-white/20 backdrop-blur-md shadow-[0_10px_20px_rgba(16,31,38,0.15)] hover:shadow-[0_15px_30px_rgba(16,31,38,0.25)] flex items-start gap-3.5 sm:gap-[20px] transition-all duration-300">
+                <div
+                    class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] shrink-0 rounded-full bg-white/15 group-hover:bg-white text-white group-hover:text-[#20B1AA] flex items-center justify-center transition-all duration-300">
+                    <svg class="w-6 h-6 sm:w-[30px] sm:h-[30px]" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M26.2125 8.9875V16.7125H2.5V8.9875C2.5 6.1 4.85 3.75 7.7375 3.75H20.975C23.8625 3.75 26.2125 6.1 26.2125 8.9875Z"
+                            fill="currentColor" />
+                        <path
+                            d="M2.5 16.7124V16.9499C2.5 19.8499 4.85 22.1874 7.7375 22.1874H12.2375C12.925 22.1874 13.4875 22.7499 13.4875 23.4374V24.4624C13.4875 25.1499 12.925 25.7124 12.2375 25.7124H9.4125C8.925 25.7124 8.525 26.1124 8.525 26.5999C8.525 27.0874 8.925 27.4874 9.4125 27.4874H19.325C19.8125 27.4874 20.2125 27.0874 20.2125 26.5999C20.2125 26.1124 19.8125 25.7124 19.325 25.7124H16.5125C15.825 25.7124 15.2625 25.1499 15.2625 24.4624V23.4374C15.2625 22.7499 15.825 22.1874 16.5125 22.1874H20.975C23.875 22.1874 26.2125 19.8374 26.2125 16.9499V16.7124H2.5Z"
+                            fill="currentColor" />
+                        <path
+                            d="M27.4875 2.95001L26.075 3.93751V3.41251C26.075 2.22501 25.1125 1.27501 23.9375 1.27501H18.5875C17.3 1.26251 16.25 2.31251 16.25 3.60001V7.70001C16.25 8.77501 16.7875 9.83751 18.3875 9.83751H23.925C25.1125 9.83751 26.0625 8.87501 26.0625 7.70001V7.16251L27.475 8.15001C28.1875 8.63751 28.75 8.33751 28.75 7.48751V3.61251C28.75 2.76251 28.1875 2.47501 27.4875 2.95001Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+
+                <div class="space-y-1 sm:space-y-[5px]">
+                    <h6 class="text-base sm:text-lg lg:text-[20px]/[20px] font-semibold">
+                        Онлайн
+                    </h6>
+                    <p class="text-xs sm:text-sm lg:text-[16px]/[20px] font-normal text-white/90">
+                        Позволил системно обучить сотрудников несколькими потоками.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="group w-full max-w-[475px] p-4 sm:p-[20px] rounded-2xl sm:rounded-[30px] bg-white/5 border border-white/10 hover:border-white/20 backdrop-blur-md shadow-[0_10px_20px_rgba(16,31,38,0.15)] hover:shadow-[0_15px_30px_rgba(16,31,38,0.25)] flex items-start gap-3.5 sm:gap-[20px] transition-all duration-300">
+                <div
+                    class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] shrink-0 rounded-full bg-white/15 group-hover:bg-white text-white group-hover:text-[#20B1AA] flex items-center justify-center transition-all duration-300">
+                    <svg class="w-6 h-6 sm:w-[30px] sm:h-[30px]" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M21.9123 9.71251C21.8248 9.70001 21.7373 9.70001 21.6498 9.71251C19.7123 9.65001 18.1748 8.0625 18.1748 6.1125C18.1748 4.125 19.7873 2.5 21.7873 2.5C23.7748 2.5 25.3998 4.1125 25.3998 6.1125C25.3873 8.0625 23.8498 9.65001 21.9123 9.71251Z"
+                            fill="currentColor" />
+                        <path opacity="0.4"
+                            d="M25.9875 18.375C24.5875 19.3125 22.625 19.6625 20.8125 19.425C21.2875 18.4 21.5375 17.2625 21.55 16.0625C21.55 14.8125 21.275 13.625 20.75 12.5875C22.6 12.3375 24.5625 12.6875 25.975 13.625C27.95 14.925 27.95 17.0625 25.9875 18.375Z"
+                            fill="currentColor" />
+                        <path opacity="0.4"
+                            d="M8.05 9.71251C8.1375 9.70001 8.225 9.70001 8.3125 9.71251C10.25 9.65001 11.7875 8.0625 11.7875 6.1125C11.7875 4.125 10.175 2.5 8.175 2.5C6.1875 2.5 4.5625 4.1125 4.5625 6.1125C4.575 8.0625 6.1125 9.65001 8.05 9.71251Z"
+                            fill="currentColor" />
+                        <path opacity="0.4"
+                            d="M8.1874 16.0623C8.1874 17.2748 8.4499 18.4248 8.9249 19.4623C7.1624 19.6498 5.3249 19.2748 3.9749 18.3873C1.9999 17.0748 1.9999 14.9373 3.9749 13.6248C5.3124 12.7248 7.1999 12.3623 8.9749 12.5623C8.4624 13.6123 8.1874 14.7998 8.1874 16.0623Z"
+                            fill="currentColor" />
+                        <path
+                            d="M15.15 19.8375C15.05 19.825 14.9375 19.825 14.825 19.8375C12.525 19.7625 10.6875 17.875 10.6875 15.55C10.6875 13.175 12.6 11.25 14.9875 11.25C17.3625 11.25 19.2875 13.175 19.2875 15.55C19.2875 17.875 17.4625 19.7625 15.15 19.8375Z"
+                            fill="currentColor" />
+                        <path
+                            d="M11.0875 22.4248C9.2 23.6873 9.2 25.7623 11.0875 27.0123C13.2375 28.4498 16.7625 28.4498 18.9125 27.0123C20.8 25.7498 20.8 23.6748 18.9125 22.4248C16.775 20.9873 13.25 20.9873 11.0875 22.4248Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+
+                <div class="space-y-1 sm:space-y-[5px]">
+                    <h6 class="text-base sm:text-lg lg:text-[20px]/[20px] font-semibold">
+                        Офлайн-встреча
+                    </h6>
+                    <p class="text-xs sm:text-sm lg:text-[16px]/[20px] font-normal text-white/90">
+                        Дала возможность подробно разобрать индивидуальные вопросы и реальные рабочие ситуации
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="relative rws-result bg-[url(../img/result-bg.webp)] bg-cover bg-no-repeat bg-center py-12 sm:py-16 md:py-20 lg:py-[120px] px-4 sm:px-6 xl:px-0 overflow-hidden">
+    <!-- Полупрозрачная светлая подложка для читаемости текста на адаптиве (< lg) -->
+    <div class="absolute inset-0 bg-white/80 sm:bg-white/75 backdrop-blur-[2px] lg:hidden pointer-events-none z-0"></div>
+
+    <div class="max-w-[1180px] mx-auto relative z-10">
+        <div class="flex items-center justify-between mb-8 sm:mb-10 lg:mb-[30px]">
+            <div class="w-full max-w-[478px] space-y-3 sm:space-y-4 lg:space-y-[30px] text-center lg:text-left mx-auto lg:mx-0">
+                <div class="flex items-center justify-center lg:justify-start gap-2.5 sm:gap-[15px]">
+                    <div>
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.43451 0L14 0L5.56549 18H0L8.43451 0Z" fill="#20B1AA" />
+                            <defs>
+                                <filter id="goal-icon-green" color-interpolation-filters="sRGB">
+                                    <feColorMatrix type="matrix"
+                                        values="0 0 0 0 0.12549 0 0 0 0 0.694118 0 0 0 0 0.666667 0 0 0 1 0" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p
+                        class="font-extrabold italic text-brandGreen text-base sm:text-lg md:text-xl lg:text-[22px]/[28px]">
+                        06
+                    </p>
+                </div>
+
+                <h6 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px]/[72px] font-extrabold italic">
+                    Результат <span class="text-brandGreen">работы</span>
+                </h6>
+
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[22px]/[30px] max-w-[445px] mx-auto lg:mx-0">
+                    Главным результатом стало понимание логики работы портала: <span class="font-semibold">
+                        сотрудники получили представление о том,
+                        какие возможности есть в Bitrix24, как между собой связаны основные инструменты и как применять
+                        их в
+                        ежедневной работе.
+                    </span>
+                </p>
+            </div>
+
+            <div class="rws-result-vector hidden lg:block shrink-0 pointer-events-none -translate-x-20">
+                <svg class="rws-result-svg overflow-visible" width="441" height="97" viewBox="0 0 441 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="rws-result-path" d="M440 42.376C115.828 30.2795 25 178.487 25 21" stroke-width="5"
+                        stroke="url(#paint0_linear_67_84)" />
+                    <g class="rws-result-dot" filter="url(#filter0_d_67_84)" transform="translate(25, 21)">
+                        <circle cx="0" cy="0" r="15" fill="#20B1AA" />
+                        <circle cx="0" cy="0" r="7" fill="white" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_67_84" x="-100%" y="-100%" width="300%" height="300%"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="5" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix"
+                                values="0 0 0 0 0.0627451 0 0 0 0 0.121569 0 0 0 0 0.14902 0 0 0 0.3 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_67_84" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_67_84" result="shape" />
+                        </filter>
+                        <linearGradient id="paint0_linear_67_84" x1="376.27" y1="137.574" x2="24.9997" y2="137.574"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" stop-opacity="0" />
+                            <stop offset="1" stop-color="white" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        <div class="flex items-center flex-col gap-4 sm:gap-5 lg:gap-[20px]">
+            <h6 class="text-lg sm:text-xl lg:text-[22px]/[26px] font-extrabold italic uppercase text-center">
+                В частности, сотрудники:
+            </h6>
+
+            <div class="w-full shrink-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-[10px]"> 
+                <div class="rws-result-card group p-4 sm:p-5 lg:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-4 lg:gap-[20px]">
+                    <div class="shrink-0 w-11 h-11 sm:w-[50px] sm:h-[50px] rounded-full flex items-center justify-center bg-[#EEF6F6] group-hover:bg-white transition-colors duration-300 relative z-10">
+                        <img src="icons/result-cards-check.svg" alt="Result Icons" class="w-5 h-5 sm:w-6 sm:h-6">
+                    </div>
+
+                    <p class="text-sm sm:text-base lg:text-[16px]/[20px] text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                        освоили постановку обычных и регулярных задач
+                    </p>
+                </div>
+                <div class="rws-result-card group p-4 sm:p-5 lg:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-4 lg:gap-[20px]">
+                    <div class="shrink-0 w-11 h-11 sm:w-[50px] sm:h-[50px] rounded-full flex items-center justify-center bg-[#EEF6F6] group-hover:bg-white transition-colors duration-300 relative z-10">
+                        <img src="icons/result-cards-check.svg" alt="Result Icons" class="w-5 h-5 sm:w-6 sm:h-6">
+                    </div>
+
+                    <p class="text-sm sm:text-base lg:text-[16px]/[20px] text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                        научились работать с проектными группами
+                    </p>
+                </div>
+                <div class="rws-result-card group p-4 sm:p-5 lg:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-4 lg:gap-[20px]">
+                    <div class="shrink-0 w-11 h-11 sm:w-[50px] sm:h-[50px] rounded-full flex items-center justify-center bg-[#EEF6F6] group-hover:bg-white transition-colors duration-300 relative z-10">
+                        <img src="icons/result-cards-check.svg" alt="Result Icons" class="w-5 h-5 sm:w-6 sm:h-6">
+                    </div>
+
+                    <p class="text-sm sm:text-base lg:text-[16px]/[20px] text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                        разобрались с календарем, мессенджером и общим диском
+                    </p>
+                </div>
+                <div class="rws-result-card group p-4 sm:p-5 lg:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-4 lg:gap-[20px]">
+                    <div class="shrink-0 w-11 h-11 sm:w-[50px] sm:h-[50px] rounded-full flex items-center justify-center bg-[#EEF6F6] group-hover:bg-white transition-colors duration-300 relative z-10">
+                        <img src="icons/result-cards-check.svg" alt="Result Icons" class="w-5 h-5 sm:w-6 sm:h-6">
+                    </div>
+
+                    <p class="text-sm sm:text-base lg:text-[16px]/[20px] text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                        получили базовое понимание работы CRM
+                    </p>
+                </div>
+                <div class="rws-result-card group p-4 sm:p-5 lg:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-4 lg:gap-[20px]">
+                    <div class="shrink-0 w-11 h-11 sm:w-[50px] sm:h-[50px] rounded-full flex items-center justify-center bg-[#EEF6F6] group-hover:bg-white transition-colors duration-300 relative z-10">
+                        <img src="icons/result-cards-check.svg" alt="Result Icons" class="w-5 h-5 sm:w-6 sm:h-6">
+                    </div>
+
+                    <p class="text-sm sm:text-base lg:text-[16px]/[20px] text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                        познакомились с лидами, сделками и планированием дел
+                    </p>
+                </div>
+                <div class="rws-result-card group p-4 sm:p-5 lg:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-4 lg:gap-[20px]">
+                    <div class="shrink-0 w-11 h-11 sm:w-[50px] sm:h-[50px] rounded-full flex items-center justify-center bg-[#EEF6F6] group-hover:bg-white transition-colors duration-300 relative z-10">
+                        <img src="icons/result-cards-check.svg" alt="Result Icons" class="w-5 h-5 sm:w-6 sm:h-6">
+                    </div>
+
+                    <p class="text-sm sm:text-base lg:text-[16px]/[20px] text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                        получили практический опыт работы с инструментами Bitrix24
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div
+    class="rws-banner-2 py-10 sm:py-12 lg:py-[80px] px-4 sm:px-6 xl:px-0 bg-[linear-gradient(115.77deg,#20B1AA_17.44%,#0F817B_82.56%)]">
+    <div class="max-w-[970px] mx-auto text-white flex flex-col lg:flex-row items-center lg:justify-between text-center lg:text-left gap-6 sm:gap-8 lg:gap-[34px]">
+        <div class="space-y-2.5 sm:space-y-[10px] w-full lg:max-w-[643px] shrink-0">
+            <h6 class="text-2xl sm:text-3xl lg:text-[36px]/[36px] font-extrabold italic">
+                Готовы обсудить ваш проект?
+            </h6>
+            <p class="text-base sm:text-lg lg:text-[22px]/[28px] opacity-90">
+                Проведем консультацию, ответим на вопросы и подготовим предложение по внедрению Битрикс24
+            </p>
+        </div>
+
+        <button type="button" class="w-full sm:w-auto shrink-0 px-6 sm:px-8 lg:px-[30px] py-4 sm:py-[18px] lg:py-[20px] bg-white hover:bg-white/95 active:scale-95 text-brandGreen hover:text-[#0F817B] uppercase text-sm sm:text-base lg:text-[16px]/[16px] italic font-extrabold rounded-[15px] shadow-[0_10px_25px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_30px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:-translate-y-0.5">
+            Получить консультацию
+        </button>
+    </div>
+</div>
+    <div class="rws-following py-12 sm:py-16 md:py-20 lg:py-[120px] px-4 sm:px-6 xl:px-0 bg-[url(../img/following-bg.webp)] bg-cover bg-top bg-no-repeat overflow-hidden">
+    <div class="max-w-[1170px] mx-auto">
+        <!-- 07 Что дальше? -->
+        <div class="flex flex-col-reverse xl:flex-row items-center xl:items-start justify-between gap-10 xl:gap-0 mb-12 sm:mb-16 lg:mb-[60px] xl:mb-[20px]">
+            <div class="shrink-0 flex flex-col gap-4 sm:gap-6 xl:gap-[30px] relative items-center xl:items-start w-full xl:w-auto xl:pl-16 2xl:pl-0">
+                <!-- Векторная линия с точкой (на экранах >= xl, точно на координатах пользователя top-44 right-20) -->
+                <div class="rws-following-vector absolute top-44 right-20 pointer-events-none hidden 2xl:block">
+                    <svg class="rws-following-svg overflow-visible" width="587" height="288" viewBox="0 0 587 288" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="rws-following-path" d="M587 2.49991C434.992 2.50043 25 417.793 25 241.794" stroke-width="5"
+                            stroke="url(#paint0_linear_70_9)" />
+                        <g class="rws-following-dot" filter="url(#filter0_d_70_9)" transform="translate(25, 241.794)">
+                            <circle cx="0" cy="0" r="15" fill="#20B1AA" />
+                            <circle cx="0" cy="0" r="7" fill="white" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_70_9" x="-100%" y="-100%" width="300%" height="300%"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.0627451 0 0 0 0 0.121569 0 0 0 0 0.14902 0 0 0 0.3 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_70_9" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_70_9"
+                                    result="shape" />
+                            </filter>
+                            <linearGradient id="paint0_linear_70_9" x1="544.5" y1="125.219" x2="67.254" y2="125.219"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="white" stop-opacity="0" />
+                                <stop offset="1" stop-color="white" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+
+                <!-- 01 -->
+                <div class="h-auto sm:h-[100px] flex items-center justify-center xl:justify-start translate-x-0 xl:-translate-x-6 2xl:-translate-x-20 w-full xl:w-auto">
+                    <h6
+                        class="hidden xl:block following-number font-extrabold italic text-[140px] select-none pointer-events-none -mr-5 leading-none shrink-0">
+                        01
+                    </h6>
+                    <div
+                        class="rws-following-card group p-4 sm:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-[20px] w-full max-w-[340px] sm:w-[360px] sm:max-w-[360px] xl:w-auto xl:max-w-[303px] h-[88px] sm:h-[100px]">
+                        <div
+                            class="w-12 h-12 sm:w-[60px] sm:h-[60px] rounded-full bg-[#20B1AA] group-hover:bg-white flex items-center justify-center shrink-0 relative z-10 transition-colors duration-300">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-8 h-8 sm:w-10 sm:h-10 text-white group-hover:text-[#20B1AA] transition-colors duration-300">
+                                <path
+                                    d="M35.0999 19.7L34.8333 19.3333C34.3666 18.7667 33.8166 18.3167 33.1833 17.9833C32.3333 17.5 31.3666 17.25 30.3666 17.25H9.61659C8.61659 17.25 7.66659 17.5 6.79992 17.9833C6.14992 18.3333 5.56659 18.8167 5.08326 19.4167C4.13326 20.6333 3.68326 22.1333 3.83326 23.6333L4.44992 31.4167C4.66659 33.7667 4.94992 36.6667 10.2333 36.6667H29.7666C35.0499 36.6667 35.3166 33.7667 35.5499 31.4L36.1666 23.65C36.3166 22.25 35.9499 20.85 35.0999 19.7ZM23.9833 28.9H15.9999C15.3499 28.9 14.8333 28.3667 14.8333 27.7333C14.8333 27.1 15.3499 26.5667 15.9999 26.5667H23.9833C24.6333 26.5667 25.1499 27.1 25.1499 27.7333C25.1499 28.3833 24.6333 28.9 23.9833 28.9Z"
+                                    fill="currentColor" />
+                                <path opacity="0.4"
+                                    d="M5.6333 18.8502C5.99997 18.5168 6.36663 18.2168 6.79997 17.9835C7.64997 17.5002 8.61663 17.2502 9.61663 17.2502H30.3833C31.3833 17.2502 32.3333 17.5002 33.2 17.9835C33.6333 18.2168 34.0166 18.5168 34.3666 18.8668V17.9835V16.3668C34.3666 10.4168 32.55 8.60016 26.6 8.60016H22.6333C21.9 8.60016 21.8833 8.5835 21.45 8.01683L19.45 5.3335C18.5 4.10016 17.75 3.3335 15.3666 3.3335H13.4C7.44997 3.3335 5.6333 5.15016 5.6333 11.1002V18.0002V18.8502Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+
+                        <p
+                            class="text-base sm:text-lg lg:text-[22px]/[24px] font-semibold text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                            Новые рабочие будни
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 02 -->
+                <div class="h-auto sm:h-[100px] flex items-center justify-center xl:justify-start translate-x-0 xl:-translate-x-20 2xl:-translate-x-64 w-full xl:w-auto">
+                    <h6
+                        class="hidden xl:block following-number font-extrabold italic text-[140px] select-none pointer-events-none -mr-5 leading-none shrink-0">
+                        02
+                    </h6>
+                    <div
+                        class="rws-following-card group p-4 sm:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-[20px] w-full max-w-[340px] sm:w-[360px] sm:max-w-[360px] xl:w-auto xl:max-w-[331px] h-[88px] sm:h-[100px]">
+                        <div
+                            class="w-12 h-12 sm:w-[60px] sm:h-[60px] rounded-full bg-[#20B1AA] group-hover:bg-white flex items-center justify-center shrink-0 relative z-10 transition-colors duration-300">
+                            <svg width="34" height="30" viewBox="0 0 34 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-7 h-7 sm:w-auto sm:h-auto text-white group-hover:text-[#20B1AA] transition-colors duration-300">
+                                <path opacity="0.4"
+                                    d="M26.6667 0H6.66667C2.98333 0 0 2.96667 0 6.61667V23.3833C0 27.0333 2.98333 30 6.66667 30H26.6667C30.35 30 33.3333 27.0333 33.3333 23.3833V6.61667C33.3333 2.96667 30.35 0 26.6667 0Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3333 9.5835H20C19.3167 9.5835 18.75 9.01683 18.75 8.3335C18.75 7.65016 19.3167 7.0835 20 7.0835H28.3333C29.0167 7.0835 29.5833 7.65016 29.5833 8.3335C29.5833 9.01683 29.0167 9.5835 28.3333 9.5835Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3332 16.25H21.6665C20.9832 16.25 20.4165 15.6833 20.4165 15C20.4165 14.3167 20.9832 13.75 21.6665 13.75H28.3332C29.0165 13.75 29.5832 14.3167 29.5832 15C29.5832 15.6833 29.0165 16.25 28.3332 16.25Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3333 22.9165H25C24.3167 22.9165 23.75 22.3498 23.75 21.6665C23.75 20.9832 24.3167 20.4165 25 20.4165H28.3333C29.0167 20.4165 29.5833 20.9832 29.5833 21.6665C29.5833 22.3498 29.0167 22.9165 28.3333 22.9165Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M10.8334 14.6502C12.9597 14.6502 14.6834 12.9265 14.6834 10.8002C14.6834 8.6739 12.9597 6.9502 10.8334 6.9502C8.7071 6.9502 6.9834 8.6739 6.9834 10.8002C6.9834 12.9265 8.7071 14.6502 10.8334 14.6502Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M12.1665 16.8501C11.2832 16.7668 10.3665 16.7668 9.48321 16.8501C6.68321 17.1168 4.43321 19.3334 4.16655 22.1334C4.14988 22.3668 4.21655 22.6001 4.38321 22.7668C4.54988 22.9334 4.76655 23.0501 4.99988 23.0501H16.6665C16.8999 23.0501 17.1332 22.9501 17.2832 22.7834C17.4332 22.6168 17.5165 22.3834 17.4999 22.1501C17.2165 19.3334 14.9832 17.1168 12.1665 16.8501Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+
+                        <p
+                            class="text-base sm:text-lg lg:text-[22px]/[24px] font-semibold text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                            Дополнительное обучение
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 03 -->
+                <div class="h-auto sm:h-[100px] flex items-center justify-center xl:justify-start translate-x-0 xl:-translate-x-16 2xl:-translate-x-52 w-full xl:w-auto">
+                    <h6
+                        class="hidden xl:block following-number font-extrabold italic text-[140px] select-none pointer-events-none -mr-5 leading-none shrink-0">
+                        03
+                    </h6>
+                    <div
+                        class="rws-following-card group p-4 sm:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-[20px] w-full max-w-[340px] sm:w-[360px] sm:max-w-[360px] xl:w-auto xl:max-w-[331px] h-[88px] sm:h-[100px]">
+                        <div
+                            class="w-12 h-12 sm:w-[60px] sm:h-[60px] rounded-full bg-[#20B1AA] group-hover:bg-white flex items-center justify-center shrink-0 relative z-10 transition-colors duration-300">
+                            <svg width="34" height="30" viewBox="0 0 34 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-7 h-7 sm:w-auto sm:h-auto text-white group-hover:text-[#20B1AA] transition-colors duration-300">
+                                <path opacity="0.4"
+                                    d="M26.6667 0H6.66667C2.98333 0 0 2.96667 0 6.61667V23.3833C0 27.0333 2.98333 30 6.66667 30H26.6667C30.35 30 33.3333 27.0333 33.3333 23.3833V6.61667C33.3333 2.96667 30.35 0 26.6667 0Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3333 9.5835H20C19.3167 9.5835 18.75 9.01683 18.75 8.3335C18.75 7.65016 19.3167 7.0835 20 7.0835H28.3333C29.0167 7.0835 29.5833 7.65016 29.5833 8.3335C29.5833 9.01683 29.0167 9.5835 28.3333 9.5835Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3332 16.25H21.6665C20.9832 16.25 20.4165 15.6833 20.4165 15C20.4165 14.3167 20.9832 13.75 21.6665 13.75H28.3332C29.0165 13.75 29.5832 14.3167 29.5832 15C29.5832 15.6833 29.0165 16.25 28.3332 16.25Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3333 22.9165H25C24.3167 22.9165 23.75 22.3498 23.75 21.6665C23.75 20.9832 24.3167 20.4165 25 20.4165H28.3333C29.0167 20.4165 29.5833 20.9832 29.5833 21.6665C29.5833 22.3498 29.0167 22.9165 28.3333 22.9165Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M10.8334 14.6502C12.9597 14.6502 14.6834 12.9265 14.6834 10.8002C14.6834 8.6739 12.9597 6.9502 10.8334 6.9502C8.7071 6.9502 6.9834 8.6739 6.9834 10.8002C6.9834 12.9265 8.7071 14.6502 10.8334 14.6502Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M12.1665 16.8501C11.2832 16.7668 10.3665 16.7668 9.48321 16.8501C6.68321 17.1168 4.43321 19.3334 4.16655 22.1334C4.14988 22.3668 4.21655 22.6001 4.38321 22.7668C4.54988 22.9334 4.76655 23.0501 4.99988 23.0501H16.6665C16.8999 23.0501 17.1332 22.9501 17.2832 22.7834C17.4332 22.6168 17.5165 22.3834 17.4999 22.1501C17.2165 19.3334 14.9832 17.1168 12.1665 16.8501Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+
+                        <p
+                            class="text-base sm:text-lg lg:text-[22px]/[24px] font-semibold text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                            Дополнительное обучение
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 04 -->
+                <div class="h-auto sm:h-[100px] flex items-center justify-center xl:justify-start translate-x-0 xl:-translate-x-10 2xl:-translate-x-36 w-full xl:w-auto">
+                    <h6
+                        class="hidden xl:block following-number font-extrabold italic text-[140px] select-none pointer-events-none -mr-5 leading-none shrink-0">
+                        04
+                    </h6>
+                    <div
+                        class="rws-following-card group p-4 sm:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-[20px] w-full max-w-[340px] sm:w-[360px] sm:max-w-[360px] xl:w-auto xl:max-w-[353px] h-[88px] sm:h-[100px]">
+                        <div
+                            class="w-12 h-12 sm:w-[60px] sm:h-[60px] rounded-full bg-[#20B1AA] group-hover:bg-white flex items-center justify-center shrink-0 relative z-10 transition-colors duration-300">
+                            <svg width="34" height="30" viewBox="0 0 34 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-7 h-7 sm:w-auto sm:h-auto text-white group-hover:text-[#20B1AA] transition-colors duration-300">
+                                <path opacity="0.4"
+                                    d="M26.6667 0H6.66667C2.98333 0 0 2.96667 0 6.61667V23.3833C0 27.0333 2.98333 30 6.66667 30H26.6667C30.35 30 33.3333 27.0333 33.3333 23.3833V6.61667C33.3333 2.96667 30.35 0 26.6667 0Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3333 9.5835H20C19.3167 9.5835 18.75 9.01683 18.75 8.3335C18.75 7.65016 19.3167 7.0835 20 7.0835H28.3333C29.0167 7.0835 29.5833 7.65016 29.5833 8.3335C29.5833 9.01683 29.0167 9.5835 28.3333 9.5835Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3332 16.25H21.6665C20.9832 16.25 20.4165 15.6833 20.4165 15C20.4165 14.3167 20.9832 13.75 21.6665 13.75H28.3332C29.0165 13.75 29.5832 14.3167 29.5832 15C29.5832 15.6833 29.0165 16.25 28.3332 16.25Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3333 22.9165H25C24.3167 22.9165 23.75 22.3498 23.75 21.6665C23.75 20.9832 24.3167 20.4165 25 20.4165H28.3333C29.0167 20.4165 29.5833 20.9832 29.5833 21.6665C29.5833 22.3498 29.0167 22.9165 28.3333 22.9165Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M10.8334 14.6502C12.9597 14.6502 14.6834 12.9265 14.6834 10.8002C14.6834 8.6739 12.9597 6.9502 10.8334 6.9502C8.7071 6.9502 6.9834 8.6739 6.9834 10.8002C6.9834 12.9265 8.7071 14.6502 10.8334 14.6502Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M12.1665 16.8501C11.2832 16.7668 10.3665 16.7668 9.48321 16.8501C6.68321 17.1168 4.43321 19.3334 4.16655 22.1334C4.14988 22.3668 4.21655 22.6001 4.38321 22.7668C4.54988 22.9334 4.76655 23.0501 4.99988 23.0501H16.6665C16.8999 23.0501 17.1332 22.9501 17.2832 22.7834C17.4332 22.6168 17.5165 22.3834 17.4999 22.1501C17.2165 19.3334 14.9832 17.1168 12.1665 16.8501Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+
+                        <p
+                            class="text-base sm:text-lg lg:text-[22px]/[24px] font-semibold text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                            Оптимизация рабочих процессов
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 05 -->
+                <div class="h-auto sm:h-[100px] flex items-center justify-center xl:justify-start translate-x-0 mt-0 xl:translate-x-16 xl:-mt-[15px] 2xl:translate-x-64 2xl:-mt-[30px] w-full xl:w-auto">
+                    <h6
+                        class="hidden xl:block following-number font-extrabold italic text-[140px] select-none pointer-events-none -mr-5 leading-none shrink-0">
+                        05
+                    </h6>
+                    <div
+                        class="rws-following-card group p-4 sm:p-[20px] rounded-2xl sm:rounded-[30px] flex items-center gap-3.5 sm:gap-[20px] w-full max-w-[340px] sm:w-[360px] sm:max-w-[360px] xl:w-auto xl:max-w-[353px] h-[88px] sm:h-[100px]">
+                        <div
+                            class="w-12 h-12 sm:w-[60px] sm:h-[60px] rounded-full bg-[#20B1AA] group-hover:bg-white flex items-center justify-center shrink-0 relative z-10 transition-colors duration-300">
+                            <svg width="34" height="30" viewBox="0 0 34 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-7 h-7 sm:w-auto sm:h-auto text-white group-hover:text-[#20B1AA] transition-colors duration-300">
+                                <path opacity="0.4"
+                                    d="M26.6667 0H6.66667C2.98333 0 0 2.96667 0 6.61667V23.3833C0 27.0333 2.98333 30 6.66667 30H26.6667C30.35 30 33.3333 27.0333 33.3333 23.3833V6.61667C33.3333 2.96667 30.35 0 26.6667 0Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3333 9.5835H20C19.3167 9.5835 18.75 9.01683 18.75 8.3335C18.75 7.65016 19.3167 7.0835 20 7.0835H28.3333C29.0167 7.0835 29.5833 7.65016 29.5833 8.3335C29.5833 9.01683 29.0167 9.5835 28.3333 9.5835Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3332 16.25H21.6665C20.9832 16.25 20.4165 15.6833 20.4165 15C20.4165 14.3167 20.9832 13.75 21.6665 13.75H28.3332C29.0165 13.75 29.5832 14.3167 29.5832 15C29.5832 15.6833 29.0165 16.25 28.3332 16.25Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M28.3333 22.9165H25C24.3167 22.9165 23.75 22.3498 23.75 21.6665C23.75 20.9832 24.3167 20.4165 25 20.4165H28.3333C29.0167 20.4165 29.5833 20.9832 29.5833 21.6665C29.5833 22.3498 29.0167 22.9165 28.3333 22.9165Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M10.8334 14.6502C12.9597 14.6502 14.6834 12.9265 14.6834 10.8002C14.6834 8.6739 12.9597 6.9502 10.8334 6.9502C8.7071 6.9502 6.9834 8.6739 6.9834 10.8002C6.9834 12.9265 8.7071 14.6502 10.8334 14.6502Z"
+                                    fill="currentColor" />
+                                <path
+                                    d="M12.1665 16.8501C11.2832 16.7668 10.3665 16.7668 9.48321 16.8501C6.68321 17.1168 4.43321 19.3334 4.16655 22.1334C4.14988 22.3668 4.21655 22.6001 4.38321 22.7668C4.54988 22.9334 4.76655 23.0501 4.99988 23.0501H16.6665C16.8999 23.0501 17.1332 22.9501 17.2832 22.7834C17.4332 22.6168 17.5165 22.3834 17.4999 22.1501C17.2165 19.3334 14.9832 17.1168 12.1665 16.8501Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+
+                        <p
+                            class="text-base sm:text-lg lg:text-[22px]/[24px] font-semibold text-main group-hover:text-white transition-colors duration-300 relative z-10">
+                            Расширение автоматазации
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правый блок с описанием -->
+            <div
+                class="rws-following-content w-full text-white max-w-[570px] space-y-3 sm:space-y-4 lg:space-y-[30px] text-center xl:text-left mx-auto xl:mx-0 shrink-0">
+                <div class="flex items-center justify-center xl:justify-start gap-2.5 sm:gap-[15px]">
+                    <div>
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.43451 0L14 0L5.56549 18H0L8.43451 0Z" fill="#20B1AA" />
+                        </svg>
+                    </div>
+                    <p
+                        class="font-extrabold italic text-brandGreen text-base sm:text-lg md:text-xl lg:text-[22px]/[28px]">
+                        07
+                    </p>
+                </div>
+
+                <h6 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px]/[72px] font-extrabold italic">
+                    Что <span class="text-brandGreen">дальше?</span>
+                </h6>
+
+                <p
+                    class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-[22px]/[30px] max-w-[445px] mx-auto xl:mx-0">
+                    После обучения компания может развивать использование портала уже на основе сформированного
+                    понимания системы — подключать дополнительные инструменты, оптимизировать рабочие процессы и
+                    постепенно расширять автоматизацию.
+                </p>
+            </div>
+        </div>
+
+        <!-- 08 Отзыв клиента -->
+        <div class="max-w-[770px] mx-auto mb-12 sm:mb-16 lg:mb-[80px]">
+            <div
+                class="rws-following-content mb-6 sm:mb-8 lg:mb-[40px] w-full text-white space-y-3 sm:space-y-4 lg:space-y-[30px] text-center lg:text-left mx-auto lg:mx-0 shrink-0">
+                <div class="flex items-center justify-center lg:justify-start gap-2.5 sm:gap-[15px]">
+                    <div>
+                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.43451 0L14 0L5.56549 18H0L8.43451 0Z" fill="#20B1AA" />
+                        </svg>
+                    </div>
+                    <p
+                        class="font-extrabold italic text-brandGreen text-base sm:text-lg md:text-xl lg:text-[22px]/[28px]">
+                        08
+                    </p>
+                </div>
+
+                <h6 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[52px]/[52px] font-extrabold italic">
+                    Отзыв <span class="text-brandGreen">клиента</span>
+                </h6>
+            </div>
+
+            <div class="text-white">
+                <div class="flex flex-col sm:flex-row items-center text-center sm:text-left gap-4 sm:gap-[30px] mb-6 sm:mb-[10px]">
+                    <div class="overflow-hidden shrink-0 rounded-full w-20 h-20 sm:w-fit sm:h-fit">
+                        <img src="img/review-avatar.webp" class="w-full h-full sm:w-auto sm:h-auto block object-cover" alt="Review Avatar">
+                    </div>
+
+                    <div class="space-y-[6px]">
+                        <h6 class="text-lg sm:text-[20px]/[20px] font-extrabold uppercase italic">
+                            Ахметов Марат Болатович
+                        </h6>
+                        <p class="text-sm sm:text-base md:text-[18px]/[18px] text-white/50">
+                            Отдел маркетинга ТОО «Railways Systems KZ»
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pl-0 sm:pl-[45px] space-y-4 sm:space-y-[20px]">
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-[20px] items-start">
+                        <div class="shrink-0 hidden sm:block">
+                            <img src="icons/review-next.svg" alt="Review Next">
+                        </div>
+                        <div class="text-sm sm:text-base lg:text-[16px]/[24px] italic space-y-3.5 max-w-[680px] text-center sm:text-left">
+                            <p>
+                                Проходили обучение у команды b24.kz по работе с Bitrix24. Особенно полезным было то, что
+                                обучение было не только теоретическим — специалисты подробно показывали, как
+                                самостоятельно
+                                настраивать роботов, автоматизацию, бизнес-процессы и другие инструменты системы.
+                            </p>
+                            <p>
+                                Все объясняли понятно и на практических примерах, отвечали на вопросы и помогали
+                                разобраться
+                                именно с нашими рабочими задачами. Благодаря этому мы получили не просто общие знания о
+                                Bitrix24, а практическое понимание того, как самостоятельно настраивать и развивать
+                                систему
+                                дальше.
+                            </p>
+                            <p>
+                                Отдельно отмечу профессионализм, компетентность и готовность подробно разбирать
+                                возникающие
+                                вопросы. Обучение было действительно полезным и применимым в работе.
+                            </p>
+                            <div class="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-start gap-2">
+                                <p class="text-sm sm:text-[16px]/[20px] uppercase font-extrabold italic max-w-[540px]">
+                                    Спасибо команде b24.kz за качественное обучение и практический подход!
+                                </p>
+
+                                <img src="icons/review-prev.svg" alt="Review Icons" class="w-auto h-auto block shrink-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кейсы -->
+        <div class="rws-cases px-4 sm:px-6 lg:px-8 xl:px-0">
+            <div class="mx-auto flex flex-col items-center gap-8 sm:gap-10 md:gap-12 lg:gap-[60px]">
+                <div
+                    class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 xl:gap-[40px] w-full justify-items-center items-center">
+                    <div
+                        class="border-2 border-dashed rounded-full w-[135px] h-[135px] sm:w-[170px] sm:h-[170px] md:w-[190px] md:h-[190px] lg:w-[230px] lg:h-[230px] xl:w-[260px] xl:h-[260px] border-main flex items-center justify-center transition-all duration-300 hover:border-brandBlue hover:scale-105 hover:shadow-lg cursor-pointer bg-white/90 backdrop-blur-sm">
+                        <h6 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-semibold">КЕЙС 1</h6>
+                    </div>
+                    <div
+                        class="border-2 border-dashed rounded-full w-[135px] h-[135px] sm:w-[170px] sm:h-[170px] md:w-[190px] md:h-[190px] lg:w-[230px] lg:h-[230px] xl:w-[260px] xl:h-[260px] border-main flex items-center justify-center transition-all duration-300 hover:border-brandBlue hover:scale-105 hover:shadow-lg cursor-pointer bg-white/90 backdrop-blur-sm">
+                        <h6 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-semibold">КЕЙС 2</h6>
+                    </div>
+                    <div
+                        class="border-2 border-dashed rounded-full w-[135px] h-[135px] sm:w-[170px] sm:h-[170px] md:w-[190px] md:h-[190px] lg:w-[230px] lg:h-[230px] xl:w-[260px] xl:h-[260px] border-main flex items-center justify-center transition-all duration-300 hover:border-brandBlue hover:scale-105 hover:shadow-lg cursor-pointer bg-white/90 backdrop-blur-sm">
+                        <h6 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-semibold">КЕЙС 3</h6>
+                    </div>
+                    <div
+                        class="border-2 border-dashed rounded-full w-[135px] h-[135px] sm:w-[170px] sm:h-[170px] md:w-[190px] md:h-[190px] lg:w-[230px] lg:h-[230px] xl:w-[260px] xl:h-[260px] border-main flex items-center justify-center transition-all duration-300 hover:border-brandBlue hover:scale-105 hover:shadow-lg cursor-pointer bg-white/90 backdrop-blur-sm">
+                        <h6 class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-semibold">КЕЙС 4</h6>
+                    </div>
+                </div>
+
+                <button type="button"
+                    class="w-full sm:w-auto uppercase font-extrabold italic text-white text-base sm:text-lg lg:text-[20px]/[16px] rounded-[15px] px-6 sm:px-[30px] py-4 sm:py-[20px] bg-[linear-gradient(115.77deg,#20B1AA_17.44%,#0F817B_82.56%)] shadow-[0_5px_20px_0_rgba(0,121,115,0.5)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_0_rgba(0,121,115,0.6)] hover:brightness-105 active:translate-y-0 active:shadow-none whitespace-nowrap">
+                    Посмотреть все кейсы
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+</body>
+
+</html>
