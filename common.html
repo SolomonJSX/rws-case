@@ -1,0 +1,103 @@
+Добав адаптив. Не сломай оригинал. Используй для адаптивности текста специальные размеры tailwind. Можешь скрыть элементы которые будет мешать адаптиву.
+
+<div
+    class="relative rws-hero pt-[72px] pb-10 sm:pt-[84px] sm:pb-14 lg:pt-[101px] lg:pb-[72px] px-4 sm:px-6 lg:px-0 bg-[url(../img/hero-train-bg.webp)] bg-cover bg-top bg-no-repeat overflow-hidden">
+    <!-- SVG-фильтр для удаления белого фона у слоев с фигурами -->
+    <svg class="w-0 h-0 absolute pointer-events-none" aria-hidden="true">
+        <defs>
+            <filter id="rws-remove-white" color-interpolation-filters="sRGB">
+                <feColorMatrix type="matrix" values="1 0 0 0 0
+                            0 1 0 0 0
+                            0 0 1 0 0
+                            -4.5 0 0 0 4.4" />
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Угловые фигуры (верхняя и нижняя части для анимации сверху и снизу) -->
+    <div class="rws-bg-angles-top absolute inset-0 bg-[url(../img/hero-angle-figures-bg.webp)] bg-cover bg-top bg-no-repeat pointer-events-none opacity-90"
+        style="filter: url(#rws-remove-white); clip-path: inset(0% 0% 100% 0%);"></div>
+    <div class="rws-bg-angles-bottom-grad absolute inset-0 bg-[url(../img/hero-angle-figures-bg.webp)] bg-cover bg-top bg-no-repeat pointer-events-none mix-blend-multiply"
+        style="clip-path: inset(100% 0% 0% 0%);"></div>
+    <div class="rws-bg-angles-bottom absolute inset-0 bg-[url(../img/hero-angle-figures-bg.webp)] bg-cover bg-top bg-no-repeat pointer-events-none opacity-90"
+        style="filter: url(#rws-remove-white); clip-path: inset(100% 0% 0% 85%);"></div>
+
+    <!-- Центральная диагональная фигура -->
+    <div class="rws-bg-middle absolute inset-0 bg-[url(../img/hero-middle-bg.webp)] bg-cover bg-top bg-no-repeat pointer-events-none opacity-90"
+        style="filter: url(#rws-remove-white); clip-path: inset(0% 0% 100% 0%);"></div>
+
+    <!-- Векторная линия до логотипа -->
+    <div
+        class="rws-hero-vector absolute z-10 top-[5px] sm:top-[17px] lg:top-[34px] left-3 sm:left-6 lg:left-[47px] pointer-events-none opacity-0">
+        <svg class="rws-hero-svg overflow-visible" width="745" height="138" viewBox="0 0 745 138" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="rws-hero-path" d="M0 2.5C288.182 2.50006 720 238.816 720 81.443" stroke-width="5"
+                stroke="url(#paint0_linear_36_6)" />
+            <g class="rws-hero-dot" filter="url(#filter0_d_36_6)">
+                <rect class="rws-hero-dot-rect" x="705.965" y="67.11" width="28.78" height="28.78" rx="14.39"
+                    fill="#20B1AA" />
+                <circle class="rws-hero-dot-circle" cx="719.965" cy="81.11" r="7" fill="white" />
+            </g>
+            <defs>
+                <filter id="filter0_d_36_6" x="695.965" y="61.11" width="48.78" height="48.78"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="5" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix"
+                        values="0 0 0 0 0.0627451 0 0 0 0 0.121569 0 0 0 0 0.14902 0 0 0 0.3 0" />
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_36_6" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_36_6" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear_36_6" x1="26.2493" y1="197.933" x2="720" y2="197.933"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="white" stop-opacity="0" />
+                    <stop offset="1" stop-color="white" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <div
+        class="relative z-10 max-w-[663px] mx-auto text-center flex flex-col items-center justify-between gap-6 sm:gap-8 lg:gap-[40px]">
+        <img src="img/hero-logo.webp" alt="Hero Logo" class="rws-hero-logo w-[210px] sm:w-[260px] lg:w-auto opacity-0">
+
+        <div class="rws-hero-text text-white space-y-4 sm:space-y-6 lg:space-y-[30px] opacity-0">
+            <h6 class="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-[42px]/[46px] italic">
+                От базовых инструментов до практики: <span class="text-brandGreen">обучение сотрудников Railways работе
+                    в Bitrix24</span>
+            </h6>
+            <p class="text-sm sm:text-base md:text-lg lg:text-[22px]/[28px]">
+                ТОО «Railways Systems KZ» – крупный оператор железнодорожной инфраструктуры и логистических сервисов
+                Казахстана. Компания работает с грузовыми и пассажирскими перевозками, управлением вагонным парком,
+                диспетчеризацией и сложными логистическими маршрутами по всей территории Казахстана.
+            </p>
+
+            <a href="https://rws.kz/" class="flex items-center justify-center gap-3 sm:gap-4 lg:gap-[20px]">
+                <div>
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.43451 0L14 0L5.56549 18H0L8.43451 0Z" fill="#20B1AA" />
+                    </svg>
+                </div>
+                <p
+                    class="text-base sm:text-lg md:text-xl lg:text-[22px]/[24px] uppercase italic font-extrabold text-brandGreen">
+                    rws.kz
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="flex items-center gap-[15px]">
+    <div>
+        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.43451 0L14 0L5.56549 18H0L8.43451 0Z" fill="#20B1AA" />
+        </svg>
+    </div>
+    <p class="font-extrabold italic text-brandGreen text-[22px]/[28px]">
+        02
+    </p>
+</div>
