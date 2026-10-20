@@ -11,8 +11,8 @@ export default defineConfig({
     rollupOptions: {
       output: {
         // Настройка для JS файлов
-        entryFileNames: 'js/script.js',
-        chunkFileNames: 'js/[name].js',
+        entryFileNames: 'js/script-[hash].js',
+        chunkFileNames: 'js/[name]-[hash].js',
         
         // Настройка для стилей (CSS) и статичных ассетов (изображений)
         assetFileNames: (assetInfo) => {
@@ -21,7 +21,7 @@ export default defineConfig({
 
           // Если это CSS файл
           if (extType === 'css') {
-            return 'css/styles.css';
+            return 'css/styles-[hash].css';
           }
 
           // Если это изображения (картинки, иконки, фавиконки)
